@@ -159,7 +159,7 @@ public class SanityDeviceTest extends DroidSetUp {
 			actualData.add(basePage.getElement(sanityPageDevice.btnReturn).getText());
 			expectedData.add(testData.get("ButtonReturn"));
 			
-//			basePage.clickElement(sanityPageDevice.imgBookCover);
+			basePage.clickElement(sanityPageDevice.imgBookCover,3);
 //			
 //			basePage.getElement(sanityPageDevice.imgBookCover);
 //			actualData.add(basePage.getElement(sanityPageDevice.imgBookCover).isDisplayed());
