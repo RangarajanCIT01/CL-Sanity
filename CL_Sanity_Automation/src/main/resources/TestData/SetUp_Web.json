@@ -1,0 +1,32 @@
+{
+	"baseData" : {
+		"LibraryID" : "rang5",
+		"EBook_ISBN" : "9780736961905",
+		"EBook_Title" : "First and Goal",
+		"EBook_SubTitle" : "What Football Taught Me About Never Giving Up",
+        "EBook_Author" : "Byrne, Jake",
+		"FontSelect1" : "Open Sans",
+		"FontSelect2" : "Noto Serif",
+		"Chapter1": "Cover",
+		"Chapter2": "Automatic First Down",
+		"TextFeatured" : "Featured",
+		"TextBorrow" : "Borrow",
+		"TextRead" : "Read",
+		"TextListen" : "Listen",
+		"TextReturn": "Return",
+		"AudioBook_ISBN" : "9781442374249",
+		"AudioBook_Title" : "Beautiful Oblivion",
+		"AudioBook_SubTitle" : "A Novel",
+		"AudioBook_Author" : "McGuire, Jamie",
+		"FeaturedShelf" : "Manual",
+		"ButtonLogin" : "Login",
+		"ButtonAccept" :"Accept",
+		"TextNoItems" : "No Items",
+		"AudioBook_Format" : "MP3",
+		"TextBrowse": "Browse",
+		"TextNotificationsHome" : "Notifications"	
+	 }	
+}
+
+
+

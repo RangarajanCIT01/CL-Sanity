@@ -1,0 +1,174 @@
+<html>
+<head>
+<title>TestNG:  WPT Sanity Check</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>WPT Sanity Check</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>19/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jul 02 11:33:00 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>1020 seconds (1020238 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='WPT.SanityTests.borrow_AudioBook()'><b>borrow_AudioBook</b><br>Test class: WPT.SanityTests<br>Test method: Borrow an Audiobook and verify the functionalities</td>
+<td></td>
+<td>64</td>
+<td>WPT.SanityTests@1f7030a6</td></tr>
+<tr>
+<td title='WPT.SanityTests.borrow_EBook()'><b>borrow_EBook</b><br>Test class: WPT.SanityTests<br>Test method: Borrow an EBook and verify the functionalities</td>
+<td></td>
+<td>134</td>
+<td>WPT.SanityTests@1f7030a6</td></tr>
+<tr>
+<td title='WPT.SanityTests.search_AudioBook()'><b>search_AudioBook</b><br>Test class: WPT.SanityTests<br>Test method: Search and verify the details of Audiobook</td>
+<td></td>
+<td>4</td>
+<td>WPT.SanityTests@1f7030a6</td></tr>
+<tr>
+<td title='WPT.SanityTests.search_EBook()'><b>search_EBook</b><br>Test class: WPT.SanityTests<br>Test method: Search and verify the details of Ebook</td>
+<td></td>
+<td>4</td>
+<td>WPT.SanityTests@1f7030a6</td></tr>
+<tr>
+<td title='Android.SanityDeviceBrowser.verifyFilter()'><b>verifyFilter</b><br>Test class: Android.SanityDeviceBrowser<br>Test method: Verify the filter functionality for EBook and Audiobook</td>
+<td></td>
+<td>69</td>
+<td>Android.SanityDeviceBrowser@396f6598</td></tr>
+<tr>
+<td title='Android.SanityDeviceTest.verifyInvalidUser()'><b>verifyInvalidUser</b><br>Test class: Android.SanityDeviceTest<br>Test method: Validate Authentication by entering Invalid Credentials</td>
+<td></td>
+<td>9</td>
+<td>Android.SanityDeviceTest@5a1c0542</td></tr>
+<tr>
+<td title='Android.SanityDeviceTest.verifyLogin()'><b>verifyLogin</b><br>Test class: Android.SanityDeviceTest<br>Test method: TC_17012 Login [MSS]: Go through the overall login flow.</td>
+<td></td>
+<td>21</td>
+<td>Android.SanityDeviceTest@5a1c0542</td></tr>
+<tr>
+<td title='Android.SanityDeviceBrowser.verifyShelf()'><b>verifyShelf</b><br>Test class: Android.SanityDeviceBrowser<br>Test method: Verify the Shelf got loaded in the Featured Page </td>
+<td></td>
+<td>10</td>
+<td>Android.SanityDeviceBrowser@396f6598</td></tr>
+<tr>
+<td title='Android.SanityDeviceTest.verifyShelfName()'><b>verifyShelfName</b><br>Test class: Android.SanityDeviceTest<br>Test method: Verify the Shelf Name</td>
+<td></td>
+<td>4</td>
+<td>Android.SanityDeviceTest@5a1c0542</td></tr>
+<tr>
+<td title='Android.SanityDeviceBrowser.verifyValidLogin()'><b>verifyValidLogin</b><br>Test class: Android.SanityDeviceBrowser<br>Test method: Login [MSS]: Go through the overall login flow.</td>
+<td></td>
+<td>22</td>
+<td>Android.SanityDeviceBrowser@396f6598</td></tr>
+<tr>
+<td title='Android.SanityDeviceTest.verify_AudioBookFilter()'><b>verify_AudioBookFilter</b><br>Test class: Android.SanityDeviceTest<br>Test method: Filter the AudioBooks</td>
+<td></td>
+<td>52</td>
+<td>Android.SanityDeviceTest@5a1c0542</td></tr>
+<tr>
+<td title='Android.SanityDeviceTest.verify_BorrowAudioBook()'><b>verify_BorrowAudioBook</b><br>Test class: Android.SanityDeviceTest<br>Test method: Borrow the AudioBook and Verify</td>
+<td></td>
+<td>99</td>
+<td>Android.SanityDeviceTest@5a1c0542</td></tr>
+<tr>
+<td title='Android.SanityDeviceBrowser.verify_BorrowAudioBook()'><b>verify_BorrowAudioBook</b><br>Test class: Android.SanityDeviceBrowser<br>Test method: Borrow the Audiobook and Verify</td>
+<td></td>
+<td>86</td>
+<td>Android.SanityDeviceBrowser@396f6598</td></tr>
+<tr>
+<td title='Android.SanityDeviceTest.verify_BorrowEBook()'><b>verify_BorrowEBook</b><br>Test class: Android.SanityDeviceTest<br>Test method: Borrow the EBook and Verify</td>
+<td></td>
+<td>31</td>
+<td>Android.SanityDeviceTest@5a1c0542</td></tr>
+<tr>
+<td title='Android.SanityDeviceBrowser.verify_BorrowEBook()'><b>verify_BorrowEBook</b><br>Test class: Android.SanityDeviceBrowser<br>Test method: Borrow the EBook and Verify</td>
+<td></td>
+<td>130</td>
+<td>Android.SanityDeviceBrowser@396f6598</td></tr>
+<tr>
+<td title='WPT.SanityTests.verify_Filter()'><b>verify_Filter</b><br>Test class: WPT.SanityTests<br>Test method: Verify the Filter functionality for EBook and Audiobook</td>
+<td></td>
+<td>14</td>
+<td>WPT.SanityTests@1f7030a6</td></tr>
+<tr>
+<td title='WPT.SanityTests.verify_Shelf()'><b>verify_Shelf</b><br>Test class: WPT.SanityTests<br>Test method: Verify the Shelf got loaded in the Featured Page</td>
+<td></td>
+<td>0</td>
+<td>WPT.SanityTests@1f7030a6</td></tr>
+<tr>
+<td title='WPT.SanityTests.verify_ValidUser()'><b>verify_ValidUser</b><br>Test class: WPT.SanityTests<br>Test method: Validate Authentication by entering Valid Credentials</td>
+<td></td>
+<td>5</td>
+<td>WPT.SanityTests@1f7030a6</td></tr>
+<tr>
+<td title='Android.SanityDeviceTest.verify_eBookFilter()'><b>verify_eBookFilter</b><br>Test class: Android.SanityDeviceTest<br>Test method: Filter the eBooks</td>
+<td></td>
+<td>48</td>
+<td>Android.SanityDeviceTest@5a1c0542</td></tr>
+</table><p>
+</body>
+</html>
