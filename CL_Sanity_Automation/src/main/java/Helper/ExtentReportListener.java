@@ -107,8 +107,6 @@ public class ExtentReportListener implements IReporter, ITestListener, Serializa
 	  this.extent.setSystemInfo("Android_AppVer", prop.getProperty("Android_AppVer"));
 	  this.extent.setSystemInfo("Android_OS_Ver", prop.getProperty("Android_OS_Ver"));
 	  this.extent.setSystemInfo("WPT_AppVer", prop.getProperty("WPT_AppVer"));
-	  
-     
  }
 
  private void buildTestNodes(IResultMap tests, Status status) {

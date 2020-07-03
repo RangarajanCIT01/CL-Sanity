@@ -6,14 +6,19 @@ import java.util.Map;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class SanityTests extends WPTSetUp {
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 
+public class SanityTests extends WPTSetUp {
+	
 	@Test(groups = "WPT", description = "Validate Authentication by entering Valid Credentials")
 	public void verify_ValidUser() throws Exception {
 		Map<String, String> testData = eff.readJsonElement("SetUp_Web.json", "baseData");
 		ArrayList<Object> actualData = new ArrayList<>();
 		ArrayList<Object> expectedData = new ArrayList<>();
-
+		
+		ExtentTest test = extent.createTest("MyFirstTest", "Sample description");
+		test.log(Status.INFO, "Login into the WPT site");
 		basePageWeb.getElement(sanityPageWeb.btnLogin);
 		actualData.add(basePageWeb.getElement(sanityPageWeb.btnLogin).getText());
 		expectedData.add(testData.get("ButtonLogin"));
@@ -21,16 +26,20 @@ public class SanityTests extends WPTSetUp {
 		basePageWeb.clickElement(sanityPageWeb.btnLogin);
 		basePageWeb.enterText(sanityPageWeb.txtLibID, testData.get("LibraryID"));
 		basePageWeb.clickElement(sanityPageWeb.btnLoginPopup);
+		test.pass("Clicked on the Login button after entering the Library ID ");
 
 		basePageWeb.getElement(sanityPageWeb.btnAccept);
 		actualData.add(basePageWeb.getElement(sanityPageWeb.btnAccept).getText());
 		expectedData.add(testData.get("ButtonAccept"));
 		basePageWeb.clickElement(sanityPageWeb.btnAccept);
+		test.pass("Clicked on the Accept Button");
 
 		basePageWeb.waitforSpinnerToComplete(sanityPageWeb.spinner);
 		basePageWeb.getElement(sanityPageWeb.menuFeatured);
 		actualData.add(basePageWeb.getElement(sanityPageWeb.menuFeatured).getText());
 		expectedData.add(testData.get("TextFeatured"));
+		
+		test.pass("Logged In successfully and landed on the Home page");
 
 		Assert.assertEquals(expectedData, actualData);
 	}

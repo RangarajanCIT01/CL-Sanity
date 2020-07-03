@@ -41,9 +41,12 @@ public class StartApp {
 	public DesiredCapabilities caps = DesiredCapabilities.android();
 	
 	// Starting the driver on device
-	public AndroidDriver<MobileElement> startApp_Mobile() throws IOException {
+	public AndroidDriver<MobileElement> startApp_Mobile() throws IOException, InterruptedException {
 		
 		emualtorBatFile();
+		Thread.sleep(5000);
+		stopAppiumServer();
+		Thread.sleep(5000);
 		startAppiumServer();
 		
 		rootPath = new File(System.getProperty("user.dir"));
@@ -170,7 +173,7 @@ public class StartApp {
 		runtime = Runtime.getRuntime();
 		try {
 		    runtime.exec("cmd.exe /c start cmd.exe /k \"appium -a 127.0.0.1 -p 4723 --session-override -dc \"{\"\"noReset\"\": \"\"false\"\"}\"\"");
-		    Thread.sleep(10000);
+		    Thread.sleep(5000);
 		    System.out.println("Appium Server is started....");
 		} catch (IOException | InterruptedException e) {
 		    e.printStackTrace();

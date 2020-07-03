@@ -12,37 +12,9 @@
       <class name="WPT.SanityTests">
         <methods>
         <include name="verify_ValidUser"/>
-		<include name="borrow_EBook" />
-		<include name="borrow_AudioBook" />
-		<include name="search_EBook" />
-		<include name="search_AudioBook" />
 		<include name="verify_Shelf" />
-		<include name="verify_Filter" />
       </methods>
-     </class>
-      
-      <class name="Android.SanityDeviceTest">
-        <methods>
-        <include name="verifyInvalidUser" />
-        <include name="verifyLogin" />
-        <include name="verify_BorrowEBook" />
-        <include name="verify_BorrowAudioBook" />
-        <include name="verify_eBookFilter" />
-        <include name="verify_AudioBookFilter" />
-        <include name="verifyShelfName" />
-      </methods>
-     </class>
-       
-     <class name="Android.SanityDeviceBrowser">
-       <methods>
-        <include name="verifyValidLogin" />
-        <include name="verify_BorrowEBook" />
-        <include name="verify_BorrowAudioBook" />
-        <include name="verifyShelf" />
-        <include name="verifyFilter" />
-      </methods>
-     </class>
-       
+     </class> 
    </classes> 
   
   </test>

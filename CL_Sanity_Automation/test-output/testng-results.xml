@@ -2,7 +2,7 @@
 <testng-results skipped="0" failed="0" ignored="0" total="19" passed="19">
   <reporter-output>
   </reporter-output>
-  <suite name="CloudLibrary_Sanity_Suite" duration-ms="1020238" started-at="2020-07-02T06:03:00Z" finished-at="2020-07-02T06:20:00Z">
+  <suite name="CloudLibrary_Sanity_Suite" duration-ms="948546" started-at="2020-07-03T05:43:59Z" finished-at="2020-07-03T05:59:47Z">
     <groups>
       <group name="DeviceBrowser">
         <method signature="SanityDeviceBrowser.verifyFilter()[pri:0, instance:Android.SanityDeviceBrowser@396f6598]" name="verifyFilter" class="Android.SanityDeviceBrowser"/>
@@ -30,109 +30,109 @@
         <method signature="SanityDeviceTest.verify_eBookFilter()[pri:0, instance:Android.SanityDeviceTest@5a1c0542]" name="verify_eBookFilter" class="Android.SanityDeviceTest"/>
       </group> <!-- Android -->
     </groups>
-    <test name="WPT Sanity Check" duration-ms="1020238" started-at="2020-07-02T06:03:00Z" finished-at="2020-07-02T06:20:00Z">
+    <test name="WPT Sanity Check" duration-ms="948546" started-at="2020-07-03T05:43:59Z" finished-at="2020-07-03T05:59:47Z">
       <class name="WPT.SanityTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:WPT.SanityTests@1f7030a6]" name="setUp" is-config="true" duration-ms="62080" started-at="2020-07-02T06:03:00Z" finished-at="2020-07-02T06:04:02Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:WPT.SanityTests@1f7030a6]" name="setUp" is-config="true" duration-ms="13411" started-at="2020-07-03T05:43:59Z" finished-at="2020-07-03T05:44:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verify_ValidUser()[pri:0, instance:WPT.SanityTests@1f7030a6]" name="verify_ValidUser" duration-ms="5519" started-at="2020-07-02T06:04:02Z" description="Validate Authentication by entering Valid Credentials" finished-at="2020-07-02T06:04:08Z">
+        <test-method status="PASS" signature="verify_ValidUser()[pri:0, instance:WPT.SanityTests@1f7030a6]" name="verify_ValidUser" duration-ms="12760" started-at="2020-07-03T05:44:12Z" description="Validate Authentication by entering Valid Credentials" finished-at="2020-07-03T05:44:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_ValidUser -->
-        <test-method status="PASS" signature="borrow_EBook()[pri:0, instance:WPT.SanityTests@1f7030a6]" name="borrow_EBook" duration-ms="134894" started-at="2020-07-02T06:04:08Z" description="Borrow an EBook and verify the functionalities" finished-at="2020-07-02T06:06:22Z">
+        <test-method status="PASS" signature="borrow_EBook()[pri:0, instance:WPT.SanityTests@1f7030a6]" name="borrow_EBook" duration-ms="104856" started-at="2020-07-03T05:44:25Z" description="Borrow an EBook and verify the functionalities" finished-at="2020-07-03T05:46:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- borrow_EBook -->
-        <test-method status="PASS" signature="borrow_AudioBook()[pri:0, instance:WPT.SanityTests@1f7030a6]" name="borrow_AudioBook" duration-ms="64644" started-at="2020-07-02T06:06:22Z" description="Borrow an Audiobook and verify the functionalities" finished-at="2020-07-02T06:07:27Z">
+        <test-method status="PASS" signature="borrow_AudioBook()[pri:0, instance:WPT.SanityTests@1f7030a6]" name="borrow_AudioBook" duration-ms="57573" started-at="2020-07-03T05:46:10Z" description="Borrow an Audiobook and verify the functionalities" finished-at="2020-07-03T05:47:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- borrow_AudioBook -->
-        <test-method status="PASS" signature="search_EBook()[pri:0, instance:WPT.SanityTests@1f7030a6]" name="search_EBook" duration-ms="4333" started-at="2020-07-02T06:07:27Z" description="Search and verify the details of Ebook" finished-at="2020-07-02T06:07:31Z">
+        <test-method status="PASS" signature="search_EBook()[pri:0, instance:WPT.SanityTests@1f7030a6]" name="search_EBook" duration-ms="4107" started-at="2020-07-03T05:47:07Z" description="Search and verify the details of Ebook" finished-at="2020-07-03T05:47:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search_EBook -->
-        <test-method status="PASS" signature="search_AudioBook()[pri:0, instance:WPT.SanityTests@1f7030a6]" name="search_AudioBook" duration-ms="4285" started-at="2020-07-02T06:07:31Z" description="Search and verify the details of Audiobook" finished-at="2020-07-02T06:07:36Z">
+        <test-method status="PASS" signature="search_AudioBook()[pri:0, instance:WPT.SanityTests@1f7030a6]" name="search_AudioBook" duration-ms="4370" started-at="2020-07-03T05:47:11Z" description="Search and verify the details of Audiobook" finished-at="2020-07-03T05:47:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search_AudioBook -->
-        <test-method status="PASS" signature="verify_Shelf()[pri:0, instance:WPT.SanityTests@1f7030a6]" name="verify_Shelf" duration-ms="787" started-at="2020-07-02T06:07:36Z" description="Verify the Shelf got loaded in the Featured Page" finished-at="2020-07-02T06:07:37Z">
+        <test-method status="PASS" signature="verify_Shelf()[pri:0, instance:WPT.SanityTests@1f7030a6]" name="verify_Shelf" duration-ms="961" started-at="2020-07-03T05:47:16Z" description="Verify the Shelf got loaded in the Featured Page" finished-at="2020-07-03T05:47:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Shelf -->
-        <test-method status="PASS" signature="verify_Filter()[pri:0, instance:WPT.SanityTests@1f7030a6]" name="verify_Filter" duration-ms="14633" started-at="2020-07-02T06:07:37Z" description="Verify the Filter functionality for EBook and Audiobook" finished-at="2020-07-02T06:07:51Z">
+        <test-method status="PASS" signature="verify_Filter()[pri:0, instance:WPT.SanityTests@1f7030a6]" name="verify_Filter" duration-ms="12879" started-at="2020-07-03T05:47:17Z" description="Verify the Filter functionality for EBook and Audiobook" finished-at="2020-07-03T05:47:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Filter -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:WPT.SanityTests@1f7030a6]" name="tearDown" is-config="true" duration-ms="826" started-at="2020-07-02T06:07:51Z" finished-at="2020-07-02T06:07:52Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:WPT.SanityTests@1f7030a6]" name="tearDown" is-config="true" duration-ms="901" started-at="2020-07-03T05:47:30Z" finished-at="2020-07-03T05:47:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- WPT.SanityTests -->
       <class name="Android.SanityDeviceTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Android.SanityDeviceTest@5a1c0542]" name="setUp" is-config="true" duration-ms="78353" started-at="2020-07-02T06:07:52Z" finished-at="2020-07-02T06:09:10Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Android.SanityDeviceTest@5a1c0542]" name="setUp" is-config="true" duration-ms="89158" started-at="2020-07-03T05:47:30Z" finished-at="2020-07-03T05:49:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyInvalidUser()[pri:0, instance:Android.SanityDeviceTest@5a1c0542]" name="verifyInvalidUser" duration-ms="9367" started-at="2020-07-02T06:09:10Z" description="Validate Authentication by entering Invalid Credentials" finished-at="2020-07-02T06:09:20Z">
+        <test-method status="PASS" signature="verifyInvalidUser()[pri:0, instance:Android.SanityDeviceTest@5a1c0542]" name="verifyInvalidUser" duration-ms="14769" started-at="2020-07-03T05:49:00Z" description="Validate Authentication by entering Invalid Credentials" finished-at="2020-07-03T05:49:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyInvalidUser -->
-        <test-method status="PASS" signature="verifyLogin()[pri:0, instance:Android.SanityDeviceTest@5a1c0542]" name="verifyLogin" duration-ms="21148" started-at="2020-07-02T06:09:20Z" description="TC_17012 Login [MSS]: Go through the overall login flow." finished-at="2020-07-02T06:09:41Z">
+        <test-method status="PASS" signature="verifyLogin()[pri:0, instance:Android.SanityDeviceTest@5a1c0542]" name="verifyLogin" duration-ms="24234" started-at="2020-07-03T05:49:14Z" description="TC_17012 Login [MSS]: Go through the overall login flow." finished-at="2020-07-03T05:49:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="verify_BorrowEBook()[pri:0, instance:Android.SanityDeviceTest@5a1c0542]" name="verify_BorrowEBook" duration-ms="31216" started-at="2020-07-02T06:09:41Z" description="Borrow the EBook and Verify" finished-at="2020-07-02T06:10:12Z">
+        <test-method status="PASS" signature="verify_BorrowEBook()[pri:0, instance:Android.SanityDeviceTest@5a1c0542]" name="verify_BorrowEBook" duration-ms="33964" started-at="2020-07-03T05:49:39Z" description="Borrow the EBook and Verify" finished-at="2020-07-03T05:50:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_BorrowEBook -->
-        <test-method status="PASS" signature="verify_BorrowAudioBook()[pri:0, instance:Android.SanityDeviceTest@5a1c0542]" name="verify_BorrowAudioBook" duration-ms="99824" started-at="2020-07-02T06:10:12Z" description="Borrow the AudioBook and Verify" finished-at="2020-07-02T06:11:52Z">
+        <test-method status="PASS" signature="verify_BorrowAudioBook()[pri:0, instance:Android.SanityDeviceTest@5a1c0542]" name="verify_BorrowAudioBook" duration-ms="84054" started-at="2020-07-03T05:50:13Z" description="Borrow the AudioBook and Verify" finished-at="2020-07-03T05:51:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_BorrowAudioBook -->
-        <test-method status="PASS" signature="verify_eBookFilter()[pri:0, instance:Android.SanityDeviceTest@5a1c0542]" name="verify_eBookFilter" duration-ms="48041" started-at="2020-07-02T06:11:52Z" description="Filter the eBooks" finished-at="2020-07-02T06:12:40Z">
+        <test-method status="PASS" signature="verify_eBookFilter()[pri:0, instance:Android.SanityDeviceTest@5a1c0542]" name="verify_eBookFilter" duration-ms="49371" started-at="2020-07-03T05:51:37Z" description="Filter the eBooks" finished-at="2020-07-03T05:52:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_eBookFilter -->
-        <test-method status="PASS" signature="verify_AudioBookFilter()[pri:0, instance:Android.SanityDeviceTest@5a1c0542]" name="verify_AudioBookFilter" duration-ms="52035" started-at="2020-07-02T06:12:40Z" description="Filter the AudioBooks" finished-at="2020-07-02T06:13:32Z">
+        <test-method status="PASS" signature="verify_AudioBookFilter()[pri:0, instance:Android.SanityDeviceTest@5a1c0542]" name="verify_AudioBookFilter" duration-ms="53074" started-at="2020-07-03T05:52:26Z" description="Filter the AudioBooks" finished-at="2020-07-03T05:53:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_AudioBookFilter -->
-        <test-method status="PASS" signature="verifyShelfName()[pri:0, instance:Android.SanityDeviceTest@5a1c0542]" name="verifyShelfName" duration-ms="4694" started-at="2020-07-02T06:13:32Z" description="Verify the Shelf Name" finished-at="2020-07-02T06:13:37Z">
+        <test-method status="PASS" signature="verifyShelfName()[pri:0, instance:Android.SanityDeviceTest@5a1c0542]" name="verifyShelfName" duration-ms="4937" started-at="2020-07-03T05:53:19Z" description="Verify the Shelf Name" finished-at="2020-07-03T05:53:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyShelfName -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Android.SanityDeviceTest@5a1c0542]" name="tearDown" is-config="true" duration-ms="3864" started-at="2020-07-02T06:13:37Z" finished-at="2020-07-02T06:13:41Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Android.SanityDeviceTest@5a1c0542]" name="tearDown" is-config="true" duration-ms="3636" started-at="2020-07-03T05:53:24Z" finished-at="2020-07-03T05:53:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Android.SanityDeviceTest -->
       <class name="Android.SanityDeviceBrowser">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Android.SanityDeviceBrowser@396f6598]" name="setUp" is-config="true" duration-ms="60205" started-at="2020-07-02T06:13:41Z" finished-at="2020-07-02T06:14:41Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Android.SanityDeviceBrowser@396f6598]" name="setUp" is-config="true" duration-ms="56274" started-at="2020-07-03T05:53:28Z" finished-at="2020-07-03T05:54:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyValidLogin()[pri:0, instance:Android.SanityDeviceBrowser@396f6598]" name="verifyValidLogin" duration-ms="22829" started-at="2020-07-02T06:14:41Z" description="Login [MSS]: Go through the overall login flow." finished-at="2020-07-02T06:15:04Z">
+        <test-method status="PASS" signature="verifyValidLogin()[pri:0, instance:Android.SanityDeviceBrowser@396f6598]" name="verifyValidLogin" duration-ms="27330" started-at="2020-07-03T05:54:24Z" description="Login [MSS]: Go through the overall login flow." finished-at="2020-07-03T05:54:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyValidLogin -->
-        <test-method status="PASS" signature="verify_BorrowEBook()[pri:0, instance:Android.SanityDeviceBrowser@396f6598]" name="verify_BorrowEBook" duration-ms="130113" started-at="2020-07-02T06:15:04Z" description="Borrow the EBook and Verify" finished-at="2020-07-02T06:17:14Z">
+        <test-method status="PASS" signature="verify_BorrowEBook()[pri:0, instance:Android.SanityDeviceBrowser@396f6598]" name="verify_BorrowEBook" duration-ms="128794" started-at="2020-07-03T05:54:51Z" description="Borrow the EBook and Verify" finished-at="2020-07-03T05:57:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_BorrowEBook -->
-        <test-method status="PASS" signature="verify_BorrowAudioBook()[pri:0, instance:Android.SanityDeviceBrowser@396f6598]" name="verify_BorrowAudioBook" duration-ms="86549" started-at="2020-07-02T06:17:14Z" description="Borrow the Audiobook and Verify" finished-at="2020-07-02T06:18:40Z">
+        <test-method status="PASS" signature="verify_BorrowAudioBook()[pri:0, instance:Android.SanityDeviceBrowser@396f6598]" name="verify_BorrowAudioBook" duration-ms="88249" started-at="2020-07-03T05:57:00Z" description="Borrow the Audiobook and Verify" finished-at="2020-07-03T05:58:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_BorrowAudioBook -->
-        <test-method status="PASS" signature="verifyShelf()[pri:0, instance:Android.SanityDeviceBrowser@396f6598]" name="verifyShelf" duration-ms="10407" started-at="2020-07-02T06:18:40Z" description="Verify the Shelf got loaded in the Featured Page " finished-at="2020-07-02T06:18:51Z">
+        <test-method status="PASS" signature="verifyShelf()[pri:0, instance:Android.SanityDeviceBrowser@396f6598]" name="verifyShelf" duration-ms="11720" started-at="2020-07-03T05:58:28Z" description="Verify the Shelf got loaded in the Featured Page " finished-at="2020-07-03T05:58:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyShelf -->
-        <test-method status="PASS" signature="verifyFilter()[pri:0, instance:Android.SanityDeviceBrowser@396f6598]" name="verifyFilter" duration-ms="69563" started-at="2020-07-02T06:18:51Z" description="Verify the filter functionality for EBook and Audiobook" finished-at="2020-07-02T06:20:00Z">
+        <test-method status="PASS" signature="verifyFilter()[pri:0, instance:Android.SanityDeviceBrowser@396f6598]" name="verifyFilter" duration-ms="67128" started-at="2020-07-03T05:58:40Z" description="Verify the filter functionality for EBook and Audiobook" finished-at="2020-07-03T05:59:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFilter -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Android.SanityDeviceBrowser@396f6598]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-07-02T06:20:00Z" finished-at="2020-07-02T06:20:00Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Android.SanityDeviceBrowser@396f6598]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-07-03T05:59:47Z" finished-at="2020-07-03T05:59:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
