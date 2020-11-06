@@ -1,0 +1,1625 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='EEEE, MMMM dd, yyyy, hh:mm a '('zzz')''/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>CloudLibrary Automation</title>
+
+	<style type='text/css'>
+	</style>
+</head>
+
+	<body class='extent standard default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>CloudLibrary Automation</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>Friday, November 06, 2020, 12:16 PM (IST)</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>3.1.5</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>WPT</a></li>
+					<li><a href='#'>Android</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Tests</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='95.238%'><span class='strong'>20</span> test(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='4.762%'>1</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='27.027%'><span class='strong'>20</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='72.973%'>54</span> others
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Tests</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>verify_ValidUser</span>
+						<span class='test-time'>Friday, November 06, 2020, 12:16 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, November 06, 2020, 12:16 PM (IST)</span>
+	<span class='label end-time'>Friday, November 06, 2020, 12:16 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+241ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>WPT</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:16:15 PM</td>
+					<td class='step-details'>Wait for spinner to Complete..</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:16:19 PM</td>
+					<td class='step-details'>Verify Login is successfull - pass</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:16:19 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>verify_Filter</span>
+						<span class='test-time'>Friday, November 06, 2020, 12:16 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, November 06, 2020, 12:16 PM (IST)</span>
+	<span class='label end-time'>Friday, November 06, 2020, 12:16 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+564ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>WPT</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:16:24 PM</td>
+					<td class='step-details'>Search the AudioBook</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:16:29 PM</td>
+					<td class='step-details'>Search the EBook</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:16:33 PM</td>
+					<td class='step-details'>Verify the EBook and AudioBook is filtered - pass</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:16:33 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>verify_EBookBookmark</span>
+						<span class='test-time'>Friday, November 06, 2020, 12:16 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, November 06, 2020, 12:16 PM (IST)</span>
+	<span class='label end-time'>Friday, November 06, 2020, 12:18 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 45s+235ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>WPT</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:16:35 PM</td>
+					<td class='step-details'>Verify by borrowing the EBook</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:17:31 PM</td>
+					<td class='step-details'>Bookmark a page in the eBook</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:18:07 PM</td>
+					<td class='step-details'>Verify the selected bookmark is displayed</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:18:18 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>verify_EBookBookmarkDelete</span>
+						<span class='test-time'>Friday, November 06, 2020, 12:18 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, November 06, 2020, 12:18 PM (IST)</span>
+	<span class='label end-time'>Friday, November 06, 2020, 12:18 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+872ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>WPT</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:18:23 PM</td>
+					<td class='step-details'>Navigate to a Chapter</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:18:29 PM</td>
+					<td class='step-details'>Bookmark a Page</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:18:33 PM</td>
+					<td class='step-details'>Delete the bookmark</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:18:33 PM</td>
+					<td class='step-details'>Verify the bookmark is deleted in Bookmarks section</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:18:33 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>verify_EBookGotoPage</span>
+						<span class='test-time'>Friday, November 06, 2020, 12:18 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, November 06, 2020, 12:18 PM (IST)</span>
+	<span class='label end-time'>Friday, November 06, 2020, 12:18 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+412ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>WPT</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:18:33 PM</td>
+					<td class='step-details'>Enter the page number</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:18:40 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  skip' status='skip' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>borrow_EBook</span>
+						<span class='test-time'>Friday, November 06, 2020, 12:18 PM (IST)</span>
+						<span class='test-status right skip'>skip</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, November 06, 2020, 12:18 PM (IST)</span>
+	<span class='label end-time'>Friday, November 06, 2020, 12:20 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 38s+287ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>WPT</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='skip'>
+					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+					<td class='timestamp'>12:20:18 PM</td>
+					<td class='step-details'>Test Skipped</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>borrow_EBook</span>
+						<span class='test-time'>Friday, November 06, 2020, 12:20 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, November 06, 2020, 12:20 PM (IST)</span>
+	<span class='label end-time'>Friday, November 06, 2020, 12:22 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 45s+323ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>WPT</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:22:02 PM</td>
+					<td class='step-details'>Verify the Font Setting options and return the EBook</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:22:03 PM</td>
+					<td class='step-details'>Verify the EBook features are verified - pass</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:22:03 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>borrow_AudioBook</span>
+						<span class='test-time'>Friday, November 06, 2020, 12:22 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, November 06, 2020, 12:22 PM (IST)</span>
+	<span class='label end-time'>Friday, November 06, 2020, 12:23 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 58s+467ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>WPT</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:22:07 PM</td>
+					<td class='step-details'>Verify by borrowing the AudioBook</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:23:00 PM</td>
+					<td class='step-details'>Verify the Audio Player Setting options and return the AudioBook</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:23:02 PM</td>
+					<td class='step-details'>Verify the AudioBook features are verified - pass</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:23:02 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>search_EBook</span>
+						<span class='test-time'>Friday, November 06, 2020, 12:23 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, November 06, 2020, 12:23 PM (IST)</span>
+	<span class='label end-time'>Friday, November 06, 2020, 12:23 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+467ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>WPT</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:23:02 PM</td>
+					<td class='step-details'>Click Browse button.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:23:03 PM</td>
+					<td class='step-details'>Enter ISBN in search - 9780736961905</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:23:06 PM</td>
+					<td class='step-details'>Verify searched title is displayed - pass</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:23:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>search_AudioBook</span>
+						<span class='test-time'>Friday, November 06, 2020, 12:23 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, November 06, 2020, 12:23 PM (IST)</span>
+	<span class='label end-time'>Friday, November 06, 2020, 12:23 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+70ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>WPT</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:23:06 PM</td>
+					<td class='step-details'>Click Browse button.</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:23:07 PM</td>
+					<td class='step-details'>Enter ISBN in search - 9781442374249</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:23:10 PM</td>
+					<td class='step-details'>Verify searched title is displayed - pass</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:23:10 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>verify_Shelf</span>
+						<span class='test-time'>Friday, November 06, 2020, 12:23 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, November 06, 2020, 12:23 PM (IST)</span>
+	<span class='label end-time'>Friday, November 06, 2020, 12:23 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+711ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>WPT</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:23:10 PM</td>
+					<td class='step-details'>Navigate to Featured Page</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:23:12 PM</td>
+					<td class='step-details'>Verify the Shelf name is displayed - pass</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:23:12 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
+					<div class='test-heading'>
+						<span class='test-name'>verify_Suggest</span>
+						<span class='test-time'>Friday, November 06, 2020, 12:23 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, November 06, 2020, 12:23 PM (IST)</span>
+	<span class='label end-time'>Friday, November 06, 2020, 12:23 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 32s+819ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>WPT</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:23:13 PM</td>
+					<td class='step-details'>Enter ISBN in search - 9780756416744</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:23:15 PM</td>
+					<td class='step-details'>Search the EBook Suggestion Title</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:23:20 PM</td>
+					<td class='step-details'>Verify the Button status as 'Remove Suggestion'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:23:27 PM</td>
+					<td class='step-details'>Search the AudioBook Suggestion Title</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:23:27 PM</td>
+					<td class='step-details'>Enter ISBN in search - 9781980011569</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:23:33 PM</td>
+					<td class='step-details'>Verify the Button status as 'Remove Suggestion'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:23:45 PM</td>
+					<td class='step-details'>Verify suggesting the EBook and Audiobook - pass</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:23:45 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
+					<div class='test-heading'>
+						<span class='test-name'>verify_ClearHistory</span>
+						<span class='test-time'>Friday, November 06, 2020, 12:23 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, November 06, 2020, 12:23 PM (IST)</span>
+	<span class='label end-time'>Friday, November 06, 2020, 12:23 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+91ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>WPT</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:23:50 PM</td>
+					<td class='step-details'>Navigate to MyBooks Page</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:23:56 PM</td>
+					<td class='step-details'>Verify that allthe titles are getting removed from History section - pass</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:23:56 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>verify_flaggedTitle</span>
+						<span class='test-time'>Friday, November 06, 2020, 12:23 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, November 06, 2020, 12:23 PM (IST)</span>
+	<span class='label end-time'>Friday, November 06, 2020, 12:24 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 25s+180ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>WPT</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:23:57 PM</td>
+					<td class='step-details'>Navigate to MyBooks Page</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:23:58 PM</td>
+					<td class='step-details'>Search a title</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:24:09 PM</td>
+					<td class='step-details'>Click on the Flag link in the Book Details page</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:24:21 PM</td>
+					<td class='step-details'>Verify the titles are getting borrowed from History section - pass</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:24:21 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyInvalidUser</span>
+						<span class='test-time'>Friday, November 06, 2020, 12:25 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, November 06, 2020, 12:25 PM (IST)</span>
+	<span class='label end-time'>Friday, November 06, 2020, 12:25 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 9s+947ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Android</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:25:41 PM</td>
+					<td class='step-details'>Enter invalid credentials</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:25:51 PM</td>
+					<td class='step-details'>Verify Login success using Invalid Credentials - pass</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:25:51 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyLogin</span>
+						<span class='test-time'>Friday, November 06, 2020, 12:25 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, November 06, 2020, 12:25 PM (IST)</span>
+	<span class='label end-time'>Friday, November 06, 2020, 12:26 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 18s+595ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Android</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:25:53 PM</td>
+					<td class='step-details'>Enter valid credentials</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:26:09 PM</td>
+					<td class='step-details'>Verify Login is successfull - pass</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:26:09 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='17'>
+					<div class='test-heading'>
+						<span class='test-name'>verify_eBookFilter</span>
+						<span class='test-time'>Friday, November 06, 2020, 12:26 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, November 06, 2020, 12:26 PM (IST)</span>
+	<span class='label end-time'>Friday, November 06, 2020, 12:27 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 55s+340ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Android</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:26:25 PM</td>
+					<td class='step-details'>Search the EBook after applying the filter</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:27:04 PM</td>
+					<td class='step-details'>Verify the EBook is filtered - pass</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:27:04 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='18'>
+					<div class='test-heading'>
+						<span class='test-name'>verify_AudioBookFilter</span>
+						<span class='test-time'>Friday, November 06, 2020, 12:27 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, November 06, 2020, 12:27 PM (IST)</span>
+	<span class='label end-time'>Friday, November 06, 2020, 12:27 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 50s+136ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Android</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:27:14 PM</td>
+					<td class='step-details'>Search the AudioBook after applying the filter</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:27:55 PM</td>
+					<td class='step-details'>Verify the AudioBook is filtered - pass</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:27:55 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='19'>
+					<div class='test-heading'>
+						<span class='test-name'>verify_BorrowEBook</span>
+						<span class='test-time'>Friday, November 06, 2020, 12:27 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, November 06, 2020, 12:27 PM (IST)</span>
+	<span class='label end-time'>Friday, November 06, 2020, 12:28 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 20s+772ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Android</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:28:00 PM</td>
+					<td class='step-details'>Verify by borrowing the EBook</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:28:15 PM</td>
+					<td class='step-details'>Verify the EBook features are verified - pass</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:28:15 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='20'>
+					<div class='test-heading'>
+						<span class='test-name'>verify_BorrowAudioBook</span>
+						<span class='test-time'>Friday, November 06, 2020, 12:28 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, November 06, 2020, 12:28 PM (IST)</span>
+	<span class='label end-time'>Friday, November 06, 2020, 12:28 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 26s+794ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Android</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:28:19 PM</td>
+					<td class='step-details'>Verify by borrowing the AudioBook</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:28:42 PM</td>
+					<td class='step-details'>Verify the AudioBook features are verified - pass</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:28:42 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='21'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyShelfName</span>
+						<span class='test-time'>Friday, November 06, 2020, 12:28 PM (IST)</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Friday, November 06, 2020, 12:28 PM (IST)</span>
+	<span class='label end-time'>Friday, November 06, 2020, 12:28 PM (IST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+943ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Android</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:28:43 PM</td>
+					<td class='step-details'>Navigate to Featured Page</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:28:46 PM</td>
+					<td class='step-details'>Verify the Shelf name is displayed - pass</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:28:46 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+</div>
+<!-- test view -->
+<div id='category-view' class='view hide'>
+
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+				
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Categories</h3>
+			<ul id='category-collection' class='category-collection'>
+				
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>WPT</span>
+						<span class='category-status right'>
+							<span class='label pass'>13</span>
+							<span class='label others'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 13</span>
+							
+							<span class='label yellow darken-2 white-text'>Others: 1</span>
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Friday, November 06, 2020, 12:16 PM (IST)</td>
+										<td class='linked' test-id='1'>verify_ValidUser</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, November 06, 2020, 12:16 PM (IST)</td>
+										<td class='linked' test-id='2'>verify_Filter</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, November 06, 2020, 12:16 PM (IST)</td>
+										<td class='linked' test-id='3'>verify_EBookBookmark</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, November 06, 2020, 12:18 PM (IST)</td>
+										<td class='linked' test-id='4'>verify_EBookBookmarkDelete</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, November 06, 2020, 12:18 PM (IST)</td>
+										<td class='linked' test-id='5'>verify_EBookGotoPage</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, November 06, 2020, 12:18 PM (IST)</td>
+										<td class='linked' test-id='6'>borrow_EBook</td>
+										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+									<tr>
+										<td>Friday, November 06, 2020, 12:20 PM (IST)</td>
+										<td class='linked' test-id='7'>borrow_EBook</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, November 06, 2020, 12:22 PM (IST)</td>
+										<td class='linked' test-id='8'>borrow_AudioBook</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, November 06, 2020, 12:23 PM (IST)</td>
+										<td class='linked' test-id='9'>search_EBook</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, November 06, 2020, 12:23 PM (IST)</td>
+										<td class='linked' test-id='10'>search_AudioBook</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, November 06, 2020, 12:23 PM (IST)</td>
+										<td class='linked' test-id='11'>verify_Shelf</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, November 06, 2020, 12:23 PM (IST)</td>
+										<td class='linked' test-id='12'>verify_Suggest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, November 06, 2020, 12:23 PM (IST)</td>
+										<td class='linked' test-id='13'>verify_ClearHistory</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, November 06, 2020, 12:23 PM (IST)</td>
+										<td class='linked' test-id='14'>verify_flaggedTitle</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>Android</span>
+						<span class='category-status right'>
+							<span class='label pass'>7</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 7</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Friday, November 06, 2020, 12:25 PM (IST)</td>
+										<td class='linked' test-id='15'>verifyInvalidUser</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, November 06, 2020, 12:25 PM (IST)</td>
+										<td class='linked' test-id='16'>verifyLogin</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, November 06, 2020, 12:26 PM (IST)</td>
+										<td class='linked' test-id='17'>verify_eBookFilter</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, November 06, 2020, 12:27 PM (IST)</td>
+										<td class='linked' test-id='18'>verify_AudioBookFilter</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, November 06, 2020, 12:27 PM (IST)</td>
+										<td class='linked' test-id='19'>verify_BorrowEBook</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, November 06, 2020, 12:28 PM (IST)</td>
+										<td class='linked' test-id='20'>verify_BorrowAudioBook</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Friday, November 06, 2020, 12:28 PM (IST)</td>
+										<td class='linked' test-id='21'>verifyShelfName</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- category view -->
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>21</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>74</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Friday, November 06, 2020, 12:16 PM (IST)</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Friday, November 06, 2020, 12:29 PM (IST)</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 12m 45s+137ms</div>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel dashboard-environment'>
+					<span class='right label cyan white-text'>Environment</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Value</th>
+						</tr>
+							<tr>
+								<td>Server</td>
+								<td>PROD</td>
+							</tr>
+							<tr>
+								<td>Browser</td>
+								<td>Chrome</td>
+							</tr>
+							<tr>
+								<td>WPT Build </td>
+								<td>3.9.19.1</td>
+							</tr>
+							<tr>
+								<td>Android Build</td>
+								<td>5.0.5.3</td>
+							</tr>
+							<tr>
+								<td>Android OS</td>
+								<td>9.0</td>
+							</tr>
+					</table>
+				</div>
+			</div>
+			<div class='col s6'>
+				<div class='card-panel dashboard-categories'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Others</th>
+							<th>Passed %</th>
+						</tr>
+						<tr>
+							<td>WPT</td>
+							<td>13</td>
+							<td>0</td>
+							<td>1</td>
+							<td>
+									92.857%
+							</td>
+						</tr>
+						<tr>
+							<td>Android</td>
+							<td>7</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 20,
+				failParent: 0,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 1,
+				exceptionsParent: 1,
+				
+				passChild: 20,
+				failChild: 0,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 1,
+				infoChild: 53,
+				exceptionsChild: 1,
+				
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		
+			<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/fca20fb7653aade98810546ab96a2a4360e3e712/dist/js/extent.js' type='text/javascript'></script>
+		
+		
+ 		<script type='text/javascript'>
+ 		</script>
+	</body>
+	
+</html>

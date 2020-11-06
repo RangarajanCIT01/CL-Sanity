@@ -1,0 +1,48 @@
+{
+	"baseData" : {
+		"LibraryID" : "rang5",
+		"EBook_ISBN" : "9780736961905",
+		"EBook_Title" : "First and Goal",
+		"EBook_SubTitle" : "What Football Taught Me About Never Giving Up",
+        "EBook_Author" : "Byrne, Jake",
+		"FontSelect1" : "Open Sans",
+		"FontSelect2" : "Noto Serif",
+		"Chapter1": "Cover",
+		"Chapter2": "Automatic First Down",
+		"TextFeatured" : "Featured",
+		"TextBorrow" : "Borrow",
+		"TextRead" : "Read",
+		"TextListen" : "Listen",
+		"TextReturn": "Return",
+		"AudioBook_ISBN" : "9781442374249",
+		"AudioBook_Title" : "Beautiful Oblivion",
+		"AudioBook_SubTitle" : "A Novel",
+		"AudioBook_Author" : "McGuire, Jamie",
+		"Suggest_EBookISBN": "9780756416744",
+		"Suggest_EBookTitle": "The Velocity of Revolution",
+		"Suggest_AudioBookISBN": "9781980011569",
+		"Suggest_AudioBookTitle": "Soulstar",
+		"FeaturedShelf" : "Rang Font Size Issues",
+		"ButtonLogin" : "Login",
+		"ButtonAccept" :"Accept",
+		"ButtonSuggest" : "Suggest to Library",
+		"TextRemoveSuggest" : "Remove Suggestion",
+		"TextNoItems" : "No Items",
+		"AudioBook_Format" : "MP3",
+		"TextBrowse": "Browse",
+		"EBook_ISBN2": "9781619634497",
+		"GotoPageNo": "30",
+		"EBook_Title2": "A Court of Wings and Ruin",
+		"ClearHistory": "There is no history of borrowed books to show.",
+		"TextNotificationsHome" : "Notifications"	
+	 },
+
+	"verify_EBookBookmark": {
+		
+		"Chapter1" : "Balanced Line"
+		
+	}
+}
+
+
+
