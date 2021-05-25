@@ -2,6 +2,7 @@ package WebPages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
@@ -40,7 +41,7 @@ public class WPTSanityPage extends WPTBasePage {
 	public By btnPlay = By.xpath("//i[@class='fa fa-play']");
 	public By btnRepeat = By.xpath("//div[@class='btn btn-large seek-forward']");
 	public By btnPause = By.xpath("//i[@class='fa fa-pause']");
-	public By lnkTrack1 = By.xpath("//span[text()='Track 1']");
+	public By lnkTrack1 = By.xpath("//span[text()='Part 1 Chapter 1']");
 	public By txtShelf = By.xpath("/html/body/main/div/div/div/div/div/div[1]/div/div/div[1]/div/span[1]/span[1]");
 	public By lnkAppearance = By.xpath("//span[@title='Appearance']");
 	public By lnkFontSizeIncrease = By.xpath("//button[@class='btn btn-narrow font-plus']");
@@ -59,6 +60,11 @@ public class WPTSanityPage extends WPTBasePage {
 	public By lnkGoto = By.xpath("//span[text()='Goto']");
 	public By txtPageno = By.xpath("//input[@type='number']");
 	public By btnGo = By.xpath("//button[@type='button']");	
+	public By btnHold = By.xpath("//button[text()='Place Hold']");
+	public By btnRemoveHold = By.xpath("//button[text()='Remove Hold']");
+	public By btnPlaceHoldPopup = By.xpath("//*[@id='quickmodals']/div/div/div/main/div/div[2]/button[1]");
+	public By btnCancel = By.xpath("//button[@translate='ACTIONBTN_CANCEL']");
+	
 	
 	//public By chapter = By.xpath("//li[@class='nav-elem']");
 	public By lnkChapterSelect1 = By.xpath("//a[text()='Automatic First Down']");

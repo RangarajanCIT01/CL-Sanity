@@ -9,21 +9,21 @@
   <test name="WPT Sanity Check" >
       
    <classes>
-      <class name="WPT.SanityTests">
-        <methods>
-        <include name="verify_ValidUser"/>       
-      	<include name="verify_Filter" />
+     <class name="WPT.SanityTests">
+       <methods>
+        <include name="verify_ValidUser"/>
+        <include name="verify_Filter" />
         <include name="verify_EBookBookmark" />
-        <include name="verify_EBookBookmarkDelete" />        
-        <include name="verify_EBookGotoPage" />        
+        <include name="verify_EBookBookmarkDelete" />
+        <include name="verify_EBookGotoPage" />
         <include name="borrow_EBook" />
         <include name="borrow_AudioBook" />
         <include name="search_EBook" />
         <include name="search_AudioBook" />
         <include name="verify_Shelf" />
         <include name="verify_Suggest" />
-        <include name="verify_ClearHistory" /> 
-		<include name="verify_flaggedTitle" /> 
+        <include name="verify_ClearHistory" />  
+        <include name="verify_flaggedTitle" />   
       </methods>
      </class>
       <class name="Android.SanityDeviceTest">
@@ -32,8 +32,11 @@
         <include name="verifyLogin" />
         <include name="verify_eBookFilter" />
         <include name="verify_AudioBookFilter" />
+        <include name="verify_FavoritesFilter" />
+        <include name="verify_AllLanguageFilter" />
         <include name="verify_BorrowEBook" />
-        <include name="verify_BorrowAudioBook" />
+        <include name="verify_BorrowAudioBook" />   
+        <include name="verify_BorrowPDF" />        
         <include name="verifyShelfName" />        
       </methods>
      </class>

@@ -40,7 +40,7 @@ public class WPTBasePage {
 	public WebElement getElement(By element) {
 		FluentWait<WebDriver> wait = new FluentWait<>(this.web_driver)
 		        .pollingEvery(Duration.ofSeconds(2))
-		        .withTimeout(Duration.ofSeconds(20))
+		        .withTimeout(Duration.ofSeconds(8))
 		        .ignoring(StaleElementReferenceException.class)
 		        .ignoring(NoSuchElementException.class)
 		        .ignoring(ElementNotVisibleException.class);

@@ -40,10 +40,10 @@ public class WPTSetUp {
 		basePageWeb.clickElement(sanityPageWeb.btnAccept);
 	}
 
-	@AfterClass(alwaysRun = true)
-	public void tearDown() throws Exception {
-//		ExtentTestManager.getTest().info("Close the web driver...");
-		startApp.closeDriver_Web();
-	}
+	
+	  @AfterClass(alwaysRun = true) public void tearDown() throws Exception { //
+	  ExtentTestManager.getTest().info("Close the web driver...");
+	  startApp.closeDriver_Web(); }
+	 
 
 }

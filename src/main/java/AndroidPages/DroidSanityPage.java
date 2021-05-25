@@ -26,7 +26,8 @@ public class DroidSanityPage extends DroidBasePage {
 	
 	/** INVALID **/
 	public By lblLoginFail = By.xpath("//android.widget.TextView[@text='Login Failed']");
-	public By lblLoginDesc = By.xpath("//android.widget.TextView[@text='Invalid Id or Password']");
+	public By lblLoginDesc = By.xpath("//android.wid"
+			+ "get.TextView[@text='Invalid Id or Password']");
 	public By btnOk = By.xpath("//android.widget.Button[@text='OK']");
 	public By btnBack = By.xpath("//android.widget.ImageButton[@index=0]");
 	public By btnAccept = By.xpath("//android.widget.Button[@text='ACCEPT']");	
@@ -96,6 +97,71 @@ public class DroidSanityPage extends DroidBasePage {
 	public By btnlistenMyBooks = By.xpath("//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[3]/android.widget.HorizontalScrollView[@resource-id='com.txtr.android.mmm:id/horizontalScrollView2']/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.Button[@text='Listen']");
 	public By btnReadMyBooks = By.xpath("//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.Button[@text='Read']");
 	
+	public By lnkTOC = By.xpath("//android.widget.TextView[@resource-id='com.txtr.android.mmm:id/toc']");
+	public By lnkBalancedLine = By.xpath("//android.widget.TextView[text()='Balanced Line']");
+	public By tapEBook = By.xpath("//android.view.ViewGroup[@index='1']");
+	public By lnkBack = By.xpath("//android.widget.ImageButton[@index='0']");
+	
+	public By btnFab = By.xpath("//android.widget.ImageButton[@resource-id='com.txtr.android.mmm:id/fab']");
+	
+	public By btnSaveforLater = By.xpath("//android.widget.Button[@text='Save for later']");
+	public By btnHold = By.xpath("//android.widget.Button[@text='Hold']");
+	public By txtEmailEnable = By.xpath("//android.widget.TextView[@resource-id='com.txtr.android.mmm:id/alertTitle']");
+	public By btnEmailEnable = By.xpath("//android.widget.Button[@text='NO']");
+	public By btnRemoveHold = By.xpath("//android.widget.Button[@text='Remove Hold']");
+	public By txtRemoveHold = By.xpath("//android.widget.TextView[@text='Remove Hold']");
+	public By txtDueDays = By.xpath("//android.widget.TextView[@resource-id='com.txtr.android.mmm:id/txt_due_info']");
+	public By txtAvailableDays = By.xpath("//android.widget.TextView[@resource-id='com.txtr.android.mmm:id/txt_available_info']");
+	public By lnkAdultFiction = By.xpath("//android.widget.LinearLayout[@resource-id='com.txtr.android.mmm:id/grp_content']/android.widget.ImageView");
+	public By lnkAdultFictionCat = By.xpath("//androidx.recyclerview.widget.RecyclerView[@resource-id='com.txtr.android.mmm:id/rv_categories']/android.widget.LinearLayout[4]/android.widget.LinearLayout[@resource-id='com.txtr.android.mmm:id/btn_category']/android.widget.TextView");
+	public By txtCategoryName = By.xpath("//androidx.recyclerview.widget.RecyclerView[@resource-id='com.txtr.android.mmm:id/rv_shelves']/android.widget.LinearLayout[@resource-id='com.txtr.android.mmm:id/grp_content']/android.widget.TextView[@resource-id='com.txtr.android.mmm:id/txt_shelf_title']");
+	public By iconStarNotFilled = By.xpath("androidx.recyclerview.widget.RecyclerView[@resource-id='com.txtr.android.mmm:id/rv_shelves']/android.widget.LinearLayout[@resource-id='com.txtr.android.mmm:id/grp_content']/android.view.ViewGroup[@resource-id='com.txtr.android.mmm:id/grp_shelf_header']/android.widget.FrameLayout[@resource-id='com.txtr.android.mmm:id/btn_favorite']/android.widget.ImageView[@resource-id='com.txtr.android.mmm:id/img_not_filled_star']");
+	public By iconStarFilled = By.xpath("//androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[3]/android.view.ViewGroup[3]/android.widget.FrameLayout[2]/android.widget.ImageView[@resource-id='com.txtr.android.mmm:id/img_filled_star']");
+	public By lnkClearAllSaved = By.xpath("//android.widget.TextView[@resource-id='com.txtr.android.mmm:id/action_clear_all_saved']");
+	public By btnUnsave = By.xpath("//android.widget.Button[@text='Unsave']");
+	public By btnBorrowSavedTitle_1 = By.xpath("//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[3]/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.Button[@text='Borrow']");	
+	public By btnBorrowSavedTitle_2 = By.xpath("//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[4]/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.Button[@text='Borrow']");
+	public By btnReturnSavedTitle_1 = By.xpath("//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[3]/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.widget.FrameLayout/android.widget.Button[@text='Return']");	
+	public By btnReturnSavedTitle_2 = By.xpath("//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[4]/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.widget.FrameLayout/android.widget.Button[@text='Return']");
+	public By btnUnsaveTitle_1 = By.xpath("//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[3]/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.widget.FrameLayout/android.widget.Button[@text='Unsave']");
+	public By btnUnsaveTitle_2 = By.xpath("//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[4]/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.FrameLayout[3]/android.widget.FrameLayout/android.widget.Button[@text='Unsave']");
+	public By lnkClearAll = By.xpath("//android.widget.TextView[@text='Clear All']");
+	public By txtWarning = By.xpath("//android.widget.TextView[@text='Warning']");
+	
+	
+	
+	/************** ACCOUNT ****************/
+	
+
+	/** LIBRARY DETAILS **/
+	public By txtLibrayDetails = By.xpath("//android.widget.TextView[@resource-id='com.txtr.android.mmm:id/txt_text_value']");
+	public By lblLibrary = By.xpath("//androidx.recyclerview.widget.RecyclerView[@resource-id='com.txtr.android.mmm:id/recycler_view_library_details']/android.widget.LinearLayout[1]/android.widget.TextView[2]");
+	public By lblPatronId = By.xpath("//androidx.recyclerview.widget.RecyclerView[@resource-id='com.txtr.android.mmm:id/recycler_view_library_details']/android.widget.LinearLayout[4]/android.widget.TextView[2]");
+	public By lblEnvironment = By.xpath("//androidx.recyclerview.widget.RecyclerView[@resource-id='com.txtr.android.mmm:id/recycler_view_library_details']/android.widget.LinearLayout[5]/android.widget.TextView[2]");
+
+	/** VIEW CARDS **/
+	
+	public By txtAddNew = By.xpath("//android.widget.TextView[@text='Add New']");
+	public By lnkDot = By.xpath("//android.widget.ImageView[@resource-id='com.txtr.android.mmm:id/img_dots']");
+	public By lnkUseCard = By.xpath("//android.widget.TextView[@text='Use Card']");
+	public By lnkSwitchAccount = By.xpath("//android.widget.Button[@text='OK']");
+		
+	/** ACCOUNT ACTIONS **/
+	public By lnkViewCards = By.xpath("//android.widget.TextView[@text='View Cards']");
+	public By lnkLibDetail = By.xpath("//android.widget.TextView[@text='Library Details']");
+	public By lnkNotify = By.xpath("//android.widget.TextView[@text='Notifications']");
+	public By lnkDataUse = By.xpath("//android.widget.TextView[@text='Cellular Data Usage']");
+	public By lnkReaderSettings = By.xpath("//android.widget.TextView[@text='Reader eBook Settings']");
+	public By lnkUsageStat = By.xpath("//android.widget.TextView[@text='Anonymous Usage Stat']");
+	public By lnkHelpNSupp = By.xpath("//android.widget.TextView[@text='Help and Support']");
+	
+	public By lnkTour = By.xpath("//android.widget.TextView[@text='Application Tour']");
+	public By lnkLibCatalog = By.xpath("//android.widget.TextView[@text='Library Catalog']");
+	public By lnkLibSupport = By.xpath("//android.widget.TextView[@text='Local Library Support']");
+	public By lnkLibContact = By.xpath("//android.widget.TextView[@text='Contact Your Library']");
+	public By lnkTutorial = By.xpath("//android.widget.TextView[@text='Tutorials and FAQ's']");	
+	
+	
 	/******** SEARCH *********/
 	
 	public By tglEbook = By.xpath("//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/android.widget.Switch[@resource-id='com.txtr.android.mmm:id/switch_row']");
@@ -162,6 +228,15 @@ public class DroidSanityPage extends DroidBasePage {
 	public By txtShelfName = By.xpath("//android.widget.TextView[@resource-id='com.txtr.android.mmm:id/txt_shelf_title']");
 	
 	
+	/** TERMS N CONDITIONS **/
+	public By btnEULA = By.xpath("//android.view.View[@text='End User License Agreement']");
+	public By btnPrivacyPolicy = By.xpath("//android.view.View[@text='Privacy Policy']");
+	public By btnTermsOfUse = By.xpath("//android.view.View[@text='Terms of Use']");
+	public By lblTerms = By.xpath("//android.view.View[@text='TERMS OF USE']");
+	public By lblEULA = By.xpath("//android.view.View[@text='END USER LICENSE AGREEMENT']");
+	public By lblPrivacy = By.xpath("//android.view.View[@text='PRIVACY POLICY']");
+	
+	
 	public DroidSanityPage selectEnvironment(Map<String, String> testData) throws MalformedURLException, InterruptedException {
 		
 		clickElement(lstLanguage);
@@ -169,8 +244,8 @@ public class DroidSanityPage extends DroidBasePage {
 		
 		clickElement(tapMain);
 						
-//		clickElement(lstEnvironment);
-//		scrollElement(testData.get("Environment"));
+		//clickElement(lstEnvironment);
+		//scrollElement(testData.get("Environment"));
 		
 		clickElement(lstCountry);
 		scrollElement(testData.get("Country"));
@@ -263,5 +338,5 @@ public class DroidSanityPage extends DroidBasePage {
 		}
 	
 	}
-	
+		
 }

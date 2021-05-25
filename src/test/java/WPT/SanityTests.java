@@ -19,7 +19,8 @@ public class SanityTests extends WPTSetUp {
 		ArrayList<Object> expectedData = new ArrayList<>();
 		
 		ExtentTestManager.getTest().info("Wait for spinner to Complete..");
-		basePageWeb.waitforSpinnerToComplete(sanityPageWeb.spinner);
+		//basePageWeb.waitforSpinnerToComplete(sanityPageWeb.spinner);
+		basePageWeb.waitforPageLoad(3);
 		basePageWeb.getElement(sanityPageWeb.menuFeatured);
 		
 		actualData.add(basePageWeb.getElement(sanityPageWeb.menuFeatured).getText());

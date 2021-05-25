@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Android Test Suite" parallel="tests" thread-count="2">
+    
+    <test name="test1">
+        <parameter name="platformVersion" value="9"/>
+        <parameter name="deviceName" value="Android_9"/>
+        
+        <classes>
+            <class name="Android.SanityDeviceTest2"/>
+        </classes>
+    </test>
+    <test name="test2">
+        <parameter name="platformVersion" value="9"/>
+        <parameter name="deviceName" value="Android_9_2"/>
+        
+        <classes>
+            <class name="Android.SanityDeviceTest3"/>
+        </classes>
+    </test>
+</suite>

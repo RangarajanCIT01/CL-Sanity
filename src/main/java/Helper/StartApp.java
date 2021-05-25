@@ -3,6 +3,8 @@ package Helper;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import io.appium.java_client.service.local.AppiumDriverLocalService;
+import io.appium.java_client.service.local.AppiumServiceBuilder;
 
 import java.io.File;
 import java.io.IOException;
@@ -137,7 +139,7 @@ public class StartApp {
 		{
 		  	rootPath = new File(System.getProperty("user.dir"));
 			appPath = new File(rootPath, "/src/main/resources/WebResrc/");
-			File chromePath = new File(appPath, "chromedriverWPT.exe");
+			File chromePath = new File(appPath, "chromedriverWeb.exe");
 			
 			effic = new Efficacies();
 			config = effic.loadPropertiesFromResources("environment.properties");
@@ -168,7 +170,18 @@ public class StartApp {
 			return web_driver;
 		}
 	
-	
+	 
+	 public void serverStartDevice1() {	 
+     // Create AppiumDriverLocalService object with specifying the port.
+     AppiumDriverLocalService service = new AppiumServiceBuilder().usingPort(4723).build();
+
+     // To start Appium server.
+     service.start();
+
+     // To End Appium server.
+     //service.stop();
+	 }
+	 
 	public void startAppiumServer() {
 		runtime = Runtime.getRuntime();
 		try {

@@ -37,7 +37,6 @@ public class ExtentTestManager {
     static String bodyHeader = "<p>Hi Team,</p><body>Please find the Automation execution for the Cloudlibrary Sanity tests :</body>";	 
 	static String bodyFooter = "<p>Thanks!</p><img src=\"https://www.bibliotheca.com/wp-content/uploads/2018/11/G-LBLO1017_2017_bibliotheca_long-term_logo_3000px-e1576140191624-180x44.png\" alt=\"logo\" width=\"250\" height=\"50\">";
 	
-	
 	public static String emailBody() throws Exception {
 		
 		prop = new Efficacies().loadPropertiesFromResources("config.properties");
@@ -69,7 +68,7 @@ public class ExtentTestManager {
 				"  </tr>\r\n" + 
 				"  <tr>\r\n" + 
 				"    <td><b>Android Build : </b></td>\r\n" + 
-				"    <td>5.0.5.3</td>\r\n" + 
+				"    <td>5.1.0.9</td>\r\n" + 
 				"  </tr>\r\n" + 
 				"  <tr>\r\n" + 
 				"    <td><b>WPT Build : </b></td>\r\n" + 
@@ -192,14 +191,14 @@ public class ExtentTestManager {
 	    }
 	    catch (MessagingException me) {
 	        me.printStackTrace();
-	    }
-			
+	    }	
 	}
 	
 	/**
 	 * Delete test-output folder before start
 	 * @param file
 	 */
+	
 	public static void recursiveDelete(File file) {
 	     // to end the recursive loop
 	     if (!file.exists())
@@ -212,6 +211,7 @@ public class ExtentTestManager {
 	             recursiveDelete(f);
 	         }
 	     }
+	     
 	     // delete files and empty directory
 	     file.delete();
 	     System.out.println("Deleted file/folder: "+file.getAbsolutePath());
@@ -223,6 +223,7 @@ public class ExtentTestManager {
 	 * @return
 	 * @throws IOException
 	 */
+	
 	public static boolean checkFileExists(String fileName) {
 		boolean checkCond = false;
 		String file = System.getProperty("user.dir") + File.separator + "test-output" + File.separator 
@@ -234,6 +235,7 @@ public class ExtentTestManager {
 			if (Duration.between(start, now).toMillis() >= 15) {
 				break;
 			}
+			
 			if (new File(file).exists()) {
 				checkCond = true;
 				break;
@@ -243,7 +245,9 @@ public class ExtentTestManager {
 		System.out.println("File Exists.." + file);
 		return checkCond;
 	}
-		
-
-
 }
+
+
+
+
+

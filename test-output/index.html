@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-CloudLibrary_Sanity_Suite">
+              <span class="suite-name border-passed">CloudLibrary Sanity Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-CloudLibrary_Sanity_Suite">
+                    <span>D:\CloudLibraryReg\MobileApps\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-CloudLibrary_Sanity_Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-CloudLibrary_Sanity_Suite">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-CloudLibrary_Sanity_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-CloudLibrary_Sanity_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-CloudLibrary_Sanity_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-CloudLibrary_Sanity_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">23 methods,   23 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-CloudLibrary_Sanity_Suite" class="hide-methods passed suite-CloudLibrary_Sanity_Suite"> (hide)</a> <!-- hide-methods passed suite-CloudLibrary_Sanity_Suite -->
+                      <a href="#" panel-name="suite-CloudLibrary_Sanity_Suite" class="show-methods passed suite-CloudLibrary_Sanity_Suite"> (show)</a> <!-- show-methods passed suite-CloudLibrary_Sanity_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-CloudLibrary_Sanity_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudLibrary_Sanity_Suite" title="WPT.SanityTests" hash-for-method="borrow_AudioBook">borrow_AudioBook</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudLibrary_Sanity_Suite" title="WPT.SanityTests" hash-for-method="borrow_EBook">borrow_EBook</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudLibrary_Sanity_Suite" title="WPT.SanityTests" hash-for-method="search_AudioBook">search_AudioBook</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudLibrary_Sanity_Suite" title="WPT.SanityTests" hash-for-method="search_EBook">search_EBook</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudLibrary_Sanity_Suite" title="Android.SanityDeviceTest" hash-for-method="verifyInvalidUser">verifyInvalidUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudLibrary_Sanity_Suite" title="Android.SanityDeviceTest" hash-for-method="verifyLogin">verifyLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudLibrary_Sanity_Suite" title="Android.SanityDeviceTest" hash-for-method="verifyShelfName">verifyShelfName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudLibrary_Sanity_Suite" title="Android.SanityDeviceTest" hash-for-method="verify_AllLanguageFilter">verify_AllLanguageFilter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudLibrary_Sanity_Suite" title="Android.SanityDeviceTest" hash-for-method="verify_AudioBookFilter">verify_AudioBookFilter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudLibrary_Sanity_Suite" title="Android.SanityDeviceTest" hash-for-method="verify_BorrowAudioBook">verify_BorrowAudioBook</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudLibrary_Sanity_Suite" title="Android.SanityDeviceTest" hash-for-method="verify_BorrowEBook">verify_BorrowEBook</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudLibrary_Sanity_Suite" title="Android.SanityDeviceTest" hash-for-method="verify_BorrowPDF">verify_BorrowPDF</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudLibrary_Sanity_Suite" title="WPT.SanityTests" hash-for-method="verify_ClearHistory">verify_ClearHistory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudLibrary_Sanity_Suite" title="WPT.SanityTests" hash-for-method="verify_EBookBookmark">verify_EBookBookmark</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudLibrary_Sanity_Suite" title="WPT.SanityTests" hash-for-method="verify_EBookBookmarkDelete">verify_EBookBookmarkDelete</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudLibrary_Sanity_Suite" title="WPT.SanityTests" hash-for-method="verify_EBookGotoPage">verify_EBookGotoPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudLibrary_Sanity_Suite" title="Android.SanityDeviceTest" hash-for-method="verify_FavoritesFilter">verify_FavoritesFilter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudLibrary_Sanity_Suite" title="WPT.SanityTests" hash-for-method="verify_Filter">verify_Filter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudLibrary_Sanity_Suite" title="WPT.SanityTests" hash-for-method="verify_Shelf">verify_Shelf</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudLibrary_Sanity_Suite" title="WPT.SanityTests" hash-for-method="verify_Suggest">verify_Suggest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudLibrary_Sanity_Suite" title="WPT.SanityTests" hash-for-method="verify_ValidUser">verify_ValidUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudLibrary_Sanity_Suite" title="Android.SanityDeviceTest" hash-for-method="verify_eBookFilter">verify_eBookFilter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudLibrary_Sanity_Suite" title="WPT.SanityTests" hash-for-method="verify_flaggedTitle">verify_flaggedTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-CloudLibrary_Sanity_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-CloudLibrary_Sanity_Suite" class="panel CloudLibrary_Sanity_Suite">
+          <div class="suite-CloudLibrary_Sanity_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Android.SanityDeviceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInvalidUser">
+                  </a> <!-- verifyInvalidUser -->
+                  <span class="method-name">verifyInvalidUser</span>
+                  <em>
+(Validate Authentication by entering Invalid Credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogin">
+                  </a> <!-- verifyLogin -->
+                  <span class="method-name">verifyLogin</span>
+                  <em>
+(TC_17012 Login [MSS]: Go through the overall login flow.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyShelfName">
+                  </a> <!-- verifyShelfName -->
+                  <span class="method-name">verifyShelfName</span>
+                  <em>
+(Verify the Shelf Name)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_AllLanguageFilter">
+                  </a> <!-- verify_AllLanguageFilter -->
+                  <span class="method-name">verify_AllLanguageFilter</span>
+                  <em>
+(Search a title in the All tab after applying Language filter)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_AudioBookFilter">
+                  </a> <!-- verify_AudioBookFilter -->
+                  <span class="method-name">verify_AudioBookFilter</span>
+                  <em>
+(Filter the AudioBooks)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_BorrowAudioBook">
+                  </a> <!-- verify_BorrowAudioBook -->
+                  <span class="method-name">verify_BorrowAudioBook</span>
+                  <em>
+(Borrow the AudioBook and Verify)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_BorrowEBook">
+                  </a> <!-- verify_BorrowEBook -->
+                  <span class="method-name">verify_BorrowEBook</span>
+                  <em>
+(Borrow the EBook and Verify)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_BorrowPDF">
+                  </a> <!-- verify_BorrowPDF -->
+                  <span class="method-name">verify_BorrowPDF</span>
+                  <em>
+(Borrow the PDF and Verify)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_FavoritesFilter">
+                  </a> <!-- verify_FavoritesFilter -->
+                  <span class="method-name">verify_FavoritesFilter</span>
+                  <em>
+(Search a title in the All tab after applying Language filter)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_eBookFilter">
+                  </a> <!-- verify_eBookFilter -->
+                  <span class="method-name">verify_eBookFilter</span>
+                  <em>
+(Filter the eBooks)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CloudLibrary_Sanity_Suite-class-passed -->
+          <div class="suite-CloudLibrary_Sanity_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">WPT.SanityTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="borrow_AudioBook">
+                  </a> <!-- borrow_AudioBook -->
+                  <span class="method-name">borrow_AudioBook</span>
+                  <em>
+(Borrow an Audiobook and verify the functionalities)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="borrow_EBook">
+                  </a> <!-- borrow_EBook -->
+                  <span class="method-name">borrow_EBook</span>
+                  <em>
+(Borrow an EBook and verify the functionalities)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="search_AudioBook">
+                  </a> <!-- search_AudioBook -->
+                  <span class="method-name">search_AudioBook</span>
+                  <em>
+(Search and verify the details of Audiobook)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="search_EBook">
+                  </a> <!-- search_EBook -->
+                  <span class="method-name">search_EBook</span>
+                  <em>
+(Search and verify the details of Ebook)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_ClearHistory">
+                  </a> <!-- verify_ClearHistory -->
+                  <span class="method-name">verify_ClearHistory</span>
+                  <em>
+(Verify borrowing the titles from the History section)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_EBookBookmark">
+                  </a> <!-- verify_EBookBookmark -->
+                  <span class="method-name">verify_EBookBookmark</span>
+                  <em>
+(Verify the Bookmark in EBook)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_EBookBookmarkDelete">
+                  </a> <!-- verify_EBookBookmarkDelete -->
+                  <span class="method-name">verify_EBookBookmarkDelete</span>
+                  <em>
+(Verify the Bookmark in EBook)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_EBookGotoPage">
+                  </a> <!-- verify_EBookGotoPage -->
+                  <span class="method-name">verify_EBookGotoPage</span>
+                  <em>
+(Verify the Bookmark in EBook)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_Filter">
+                  </a> <!-- verify_Filter -->
+                  <span class="method-name">verify_Filter</span>
+                  <em>
+(Verify the Filter functionality for EBook and Audiobook)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_Shelf">
+                  </a> <!-- verify_Shelf -->
+                  <span class="method-name">verify_Shelf</span>
+                  <em>
+(Verify the Shelf got loaded in the Featured Page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_Suggest">
+                  </a> <!-- verify_Suggest -->
+                  <span class="method-name">verify_Suggest</span>
+                  <em>
+(Search and verify the details of Suggested eBooks and Audiobooks)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_ValidUser">
+                  </a> <!-- verify_ValidUser -->
+                  <span class="method-name">verify_ValidUser</span>
+                  <em>
+(Validate Authentication by entering Valid Credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_flaggedTitle">
+                  </a> <!-- verify_flaggedTitle -->
+                  <span class="method-name">verify_flaggedTitle</span>
+                  <em>
+(Verify borrowing the titles from the History section)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CloudLibrary_Sanity_Suite-class-passed -->
+        </div> <!-- panel CloudLibrary_Sanity_Suite -->
+        <div panel-name="test-xml-CloudLibrary_Sanity_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\CloudLibraryReg\MobileApps\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;CloudLibrary Sanity Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;Helper.TestListener&quot;/&gt;
+    &lt;listener class-name=&quot;Helper.RetryListenerClass&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;WPT Sanity Check&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;WPT.SanityTests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verify_ValidUser&quot;/&gt;
+          &lt;include name=&quot;verify_Filter&quot;/&gt;
+          &lt;include name=&quot;verify_EBookBookmark&quot;/&gt;
+          &lt;include name=&quot;verify_EBookBookmarkDelete&quot;/&gt;
+          &lt;include name=&quot;verify_EBookGotoPage&quot;/&gt;
+          &lt;include name=&quot;borrow_EBook&quot;/&gt;
+          &lt;include name=&quot;borrow_AudioBook&quot;/&gt;
+          &lt;include name=&quot;search_EBook&quot;/&gt;
+          &lt;include name=&quot;search_AudioBook&quot;/&gt;
+          &lt;include name=&quot;verify_Shelf&quot;/&gt;
+          &lt;include name=&quot;verify_Suggest&quot;/&gt;
+          &lt;include name=&quot;verify_ClearHistory&quot;/&gt;
+          &lt;include name=&quot;verify_flaggedTitle&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- WPT.SanityTests --&gt;
+      &lt;class name=&quot;Android.SanityDeviceTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verifyInvalidUser&quot;/&gt;
+          &lt;include name=&quot;verifyLogin&quot;/&gt;
+          &lt;include name=&quot;verify_eBookFilter&quot;/&gt;
+          &lt;include name=&quot;verify_AudioBookFilter&quot;/&gt;
+          &lt;include name=&quot;verify_FavoritesFilter&quot;/&gt;
+          &lt;include name=&quot;verify_AllLanguageFilter&quot;/&gt;
+          &lt;include name=&quot;verify_BorrowEBook&quot;/&gt;
+          &lt;include name=&quot;verify_BorrowAudioBook&quot;/&gt;
+          &lt;include name=&quot;verify_BorrowPDF&quot;/&gt;
+          &lt;include name=&quot;verifyShelfName&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Android.SanityDeviceTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- WPT Sanity Check --&gt;
+&lt;/suite&gt; &lt;!-- CloudLibrary Sanity Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-CloudLibrary_Sanity_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for CloudLibrary Sanity Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">WPT Sanity Check (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-CloudLibrary_Sanity_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for CloudLibrary Sanity Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Android</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyInvalidUser</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyShelfName</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_AllLanguageFilter</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_AudioBookFilter</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_BorrowAudioBook</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_BorrowEBook</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_BorrowPDF</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_FavoritesFilter</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_eBookFilter</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">WPT</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">borrow_AudioBook</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">borrow_EBook</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">search_AudioBook</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">search_EBook</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_ClearHistory</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_EBookBookmark</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_EBookBookmarkDelete</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_EBookGotoPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_Filter</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_Shelf</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_Suggest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_ValidUser</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_flaggedTitle</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-CloudLibrary_Sanity_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for CloudLibrary Sanity Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_CloudLibrary_Sanity_Suite');
+function tableData_CloudLibrary_Sanity_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(23);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'borrow_EBook')
+data.setCell(0, 2, 'WPT.SanityTests')
+data.setCell(0, 3, 94359);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verify_EBookBookmark')
+data.setCell(1, 2, 'WPT.SanityTests')
+data.setCell(1, 3, 78259);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'borrow_AudioBook')
+data.setCell(2, 2, 'WPT.SanityTests')
+data.setCell(2, 3, 60565);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verify_AudioBookFilter')
+data.setCell(3, 2, 'Android.SanityDeviceTest')
+data.setCell(3, 3, 57657);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verify_eBookFilter')
+data.setCell(4, 2, 'Android.SanityDeviceTest')
+data.setCell(4, 3, 52214);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verify_FavoritesFilter')
+data.setCell(5, 2, 'Android.SanityDeviceTest')
+data.setCell(5, 3, 36157);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verify_Suggest')
+data.setCell(6, 2, 'WPT.SanityTests')
+data.setCell(6, 3, 33448);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verify_AllLanguageFilter')
+data.setCell(7, 2, 'Android.SanityDeviceTest')
+data.setCell(7, 3, 32069);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verify_BorrowAudioBook')
+data.setCell(8, 2, 'Android.SanityDeviceTest')
+data.setCell(8, 3, 28305);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verify_flaggedTitle')
+data.setCell(9, 2, 'WPT.SanityTests')
+data.setCell(9, 3, 27134);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verify_BorrowEBook')
+data.setCell(10, 2, 'Android.SanityDeviceTest')
+data.setCell(10, 3, 21067);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verify_BorrowPDF')
+data.setCell(11, 2, 'Android.SanityDeviceTest')
+data.setCell(11, 3, 19307);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verify_Filter')
+data.setCell(12, 2, 'WPT.SanityTests')
+data.setCell(12, 3, 17851);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyLogin')
+data.setCell(13, 2, 'Android.SanityDeviceTest')
+data.setCell(13, 3, 17546);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyShelfName')
+data.setCell(14, 2, 'Android.SanityDeviceTest')
+data.setCell(14, 3, 14996);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verify_EBookBookmarkDelete')
+data.setCell(15, 2, 'WPT.SanityTests')
+data.setCell(15, 3, 14745);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyInvalidUser')
+data.setCell(16, 2, 'Android.SanityDeviceTest')
+data.setCell(16, 3, 9241);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verify_ClearHistory')
+data.setCell(17, 2, 'WPT.SanityTests')
+data.setCell(17, 3, 7361);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verify_EBookGotoPage')
+data.setCell(18, 2, 'WPT.SanityTests')
+data.setCell(18, 3, 6424);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'search_AudioBook')
+data.setCell(19, 2, 'WPT.SanityTests')
+data.setCell(19, 3, 4154);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'search_EBook')
+data.setCell(20, 2, 'WPT.SanityTests')
+data.setCell(20, 3, 4059);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verify_ValidUser')
+data.setCell(21, 2, 'WPT.SanityTests')
+data.setCell(21, 3, 3179);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'verify_Shelf')
+data.setCell(22, 2, 'WPT.SanityTests')
+data.setCell(22, 3, 1541);
+window.suiteTableData['CloudLibrary_Sanity_Suite']= { tableData: data, tableDiv: 'times-div-CloudLibrary_Sanity_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 10 minutes</span>
+              <div id="times-div-CloudLibrary_Sanity_Suite">
+              </div> <!-- times-div-CloudLibrary_Sanity_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-CloudLibrary_Sanity_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for CloudLibrary Sanity Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-CloudLibrary_Sanity_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">6 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Android.SanityDeviceTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verify_HistoryClear</span>
+                <br/>
+                <span class="ignored-method-name">verify_Fab</span>
+                <br/>
+                <span class="ignored-method-name">verify_SaveTitle</span>
+                <br/>
+                <span class="ignored-method-name">verify_AddSecondUser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">WPT.SanityTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">Switch_Emulator</span>
+                <br/>
+                <span class="ignored-method-name">verify_BorrowHistory</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-CloudLibrary_Sanity_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">WPT.SanityTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verify_ValidUser</span>
+                <span class="method-start">8685 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_Filter</span>
+                <span class="method-start">11866 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_EBookBookmark</span>
+                <span class="method-start">29718 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_EBookBookmarkDelete</span>
+                <span class="method-start">107978 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_EBookGotoPage</span>
+                <span class="method-start">122723 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">borrow_EBook</span>
+                <span class="method-start">129148 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">borrow_AudioBook</span>
+                <span class="method-start">223507 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">search_EBook</span>
+                <span class="method-start">284073 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">search_AudioBook</span>
+                <span class="method-start">288132 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_Shelf</span>
+                <span class="method-start">292287 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_Suggest</span>
+                <span class="method-start">293829 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_ClearHistory</span>
+                <span class="method-start">327278 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_flaggedTitle</span>
+                <span class="method-start">334639 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">361774 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Android.SanityDeviceTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">362560 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyInvalidUser</span>
+                <span class="method-start">430074 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLogin</span>
+                <span class="method-start">439315 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_eBookFilter</span>
+                <span class="method-start">456862 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_AudioBookFilter</span>
+                <span class="method-start">509077 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_FavoritesFilter</span>
+                <span class="method-start">566734 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_AllLanguageFilter</span>
+                <span class="method-start">602892 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_BorrowEBook</span>
+                <span class="method-start">634962 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_BorrowAudioBook</span>
+                <span class="method-start">656029 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_BorrowPDF</span>
+                <span class="method-start">684335 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyShelfName</span>
+                <span class="method-start">703643 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">718639 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
