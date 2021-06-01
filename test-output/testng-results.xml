@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="6" total="29" passed="23">
+<testng-results skipped="1" failed="0" ignored="6" total="30" passed="23">
   <reporter-output>
   </reporter-output>
-  <suite name="CloudLibrary Sanity Suite" duration-ms="724668" started-at="2021-05-25T06:37:02Z" finished-at="2021-05-25T06:49:07Z">
+  <suite name="CloudLibrary Sanity Suite" duration-ms="903501" started-at="2021-06-01T04:48:01Z" finished-at="2021-06-01T05:03:04Z">
     <groups>
       <group name="WPT">
         <method signature="SanityTests.borrow_AudioBook()[pri:0, instance:WPT.SanityTests@30b8a058]" name="borrow_AudioBook" class="WPT.SanityTests"/>
@@ -32,115 +32,186 @@
         <method signature="SanityDeviceTest.verify_eBookFilter()[pri:0, instance:Android.SanityDeviceTest@7494e528]" name="verify_eBookFilter" class="Android.SanityDeviceTest"/>
       </group> <!-- Android -->
     </groups>
-    <test name="WPT Sanity Check" duration-ms="724668" started-at="2021-05-25T06:37:02Z" finished-at="2021-05-25T06:49:07Z">
+    <test name="WPT Sanity Check" duration-ms="903501" started-at="2021-06-01T04:48:01Z" finished-at="2021-06-01T05:03:04Z">
       <class name="WPT.SanityTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:WPT.SanityTests@30b8a058]" name="setUp" is-config="true" duration-ms="8680" started-at="2021-05-25T06:37:02Z" finished-at="2021-05-25T06:37:11Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:WPT.SanityTests@30b8a058]" name="setUp" is-config="true" duration-ms="8459" started-at="2021-06-01T04:48:01Z" finished-at="2021-06-01T04:48:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verify_ValidUser()[pri:0, instance:WPT.SanityTests@30b8a058]" name="verify_ValidUser" duration-ms="3179" started-at="2021-05-25T06:37:11Z" description="Validate Authentication by entering Valid Credentials" finished-at="2021-05-25T06:37:14Z">
+        <test-method status="PASS" signature="verify_ValidUser()[pri:0, instance:WPT.SanityTests@30b8a058]" name="verify_ValidUser" duration-ms="3167" started-at="2021-06-01T04:48:09Z" description="Validate Authentication by entering Valid Credentials" finished-at="2021-06-01T04:48:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_ValidUser -->
-        <test-method status="PASS" signature="verify_Filter()[pri:0, instance:WPT.SanityTests@30b8a058]" name="verify_Filter" duration-ms="17851" started-at="2021-05-25T06:37:14Z" description="Verify the Filter functionality for EBook and Audiobook" finished-at="2021-05-25T06:37:32Z">
+        <test-method status="PASS" signature="verify_Filter()[pri:0, instance:WPT.SanityTests@30b8a058]" name="verify_Filter" duration-ms="14870" started-at="2021-06-01T04:48:12Z" description="Verify the Filter functionality for EBook and Audiobook" finished-at="2021-06-01T04:48:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Filter -->
-        <test-method status="PASS" signature="verify_EBookBookmark()[pri:0, instance:WPT.SanityTests@30b8a058]" name="verify_EBookBookmark" duration-ms="78259" started-at="2021-05-25T06:37:32Z" description="Verify the Bookmark in EBook" finished-at="2021-05-25T06:38:50Z">
+        <test-method status="PASS" signature="verify_EBookBookmark()[pri:0, instance:WPT.SanityTests@30b8a058]" name="verify_EBookBookmark" duration-ms="81983" started-at="2021-06-01T04:48:27Z" description="Verify the Bookmark in EBook" finished-at="2021-06-01T04:49:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_EBookBookmark -->
-        <test-method status="PASS" signature="verify_EBookBookmarkDelete()[pri:0, instance:WPT.SanityTests@30b8a058]" name="verify_EBookBookmarkDelete" duration-ms="14745" started-at="2021-05-25T06:38:50Z" description="Verify the Bookmark in EBook" finished-at="2021-05-25T06:39:05Z">
+        <test-method status="PASS" signature="verify_EBookBookmarkDelete()[pri:0, instance:WPT.SanityTests@30b8a058]" name="verify_EBookBookmarkDelete" duration-ms="14716" started-at="2021-06-01T04:49:49Z" description="Verify the Bookmark in EBook" finished-at="2021-06-01T04:50:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_EBookBookmarkDelete -->
-        <test-method status="PASS" signature="verify_EBookGotoPage()[pri:0, instance:WPT.SanityTests@30b8a058]" name="verify_EBookGotoPage" duration-ms="6424" started-at="2021-05-25T06:39:05Z" description="Verify the Bookmark in EBook" finished-at="2021-05-25T06:39:11Z">
+        <test-method status="PASS" signature="verify_EBookGotoPage()[pri:0, instance:WPT.SanityTests@30b8a058]" name="verify_EBookGotoPage" duration-ms="6381" started-at="2021-06-01T04:50:04Z" description="Verify the Bookmark in EBook" finished-at="2021-06-01T04:50:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_EBookGotoPage -->
-        <test-method status="PASS" signature="borrow_EBook()[pri:0, instance:WPT.SanityTests@30b8a058]" name="borrow_EBook" duration-ms="94359" started-at="2021-05-25T06:39:11Z" description="Borrow an EBook and verify the functionalities" finished-at="2021-05-25T06:40:46Z">
+        <test-method status="SKIP" signature="borrow_EBook()[pri:0, instance:WPT.SanityTests@30b8a058]" name="borrow_EBook" duration-ms="86132" started-at="2021-06-01T04:50:10Z" description="Borrow an EBook and verify the functionalities" finished-at="2021-06-01T04:51:36Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //span[@id='close'] (tried for 8 second(s) with 2000 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[@id='close'] (tried for 8 second(s) with 2000 milliseconds interval)
+at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at WebPages.WPTBasePage.getElement(WPTBasePage.java:48)
+at WPT.SanityTests.borrow_EBook(SanityTests.java:195)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@id='close']"}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QA-RANGARAJAN', ip: '192.168.60.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\RANGAR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:33169}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0cc05f901ed1bf37050d97139a13827c
+*** Element info: {Using=xpath, value=//span[@id='close']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- borrow_EBook -->
-        <test-method status="PASS" signature="borrow_AudioBook()[pri:0, instance:WPT.SanityTests@30b8a058]" name="borrow_AudioBook" duration-ms="60565" started-at="2021-05-25T06:40:46Z" description="Borrow an Audiobook and verify the functionalities" finished-at="2021-05-25T06:41:46Z">
+        <test-method status="PASS" signature="borrow_EBook()[pri:0, instance:WPT.SanityTests@30b8a058]" name="borrow_EBook" duration-ms="101421" started-at="2021-06-01T04:51:36Z" description="Borrow an EBook and verify the functionalities" finished-at="2021-06-01T04:53:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- borrow_EBook -->
+        <test-method status="PASS" signature="borrow_AudioBook()[pri:0, instance:WPT.SanityTests@30b8a058]" name="borrow_AudioBook" duration-ms="57251" started-at="2021-06-01T04:53:18Z" description="Borrow an Audiobook and verify the functionalities" finished-at="2021-06-01T04:54:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- borrow_AudioBook -->
-        <test-method status="PASS" signature="search_EBook()[pri:0, instance:WPT.SanityTests@30b8a058]" name="search_EBook" duration-ms="4059" started-at="2021-05-25T06:41:46Z" description="Search and verify the details of Ebook" finished-at="2021-05-25T06:41:50Z">
+        <test-method status="PASS" signature="search_EBook()[pri:0, instance:WPT.SanityTests@30b8a058]" name="search_EBook" duration-ms="3797" started-at="2021-06-01T04:54:15Z" description="Search and verify the details of Ebook" finished-at="2021-06-01T04:54:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search_EBook -->
-        <test-method status="PASS" signature="search_AudioBook()[pri:0, instance:WPT.SanityTests@30b8a058]" name="search_AudioBook" duration-ms="4154" started-at="2021-05-25T06:41:50Z" description="Search and verify the details of Audiobook" finished-at="2021-05-25T06:41:54Z">
+        <test-method status="PASS" signature="search_AudioBook()[pri:0, instance:WPT.SanityTests@30b8a058]" name="search_AudioBook" duration-ms="4024" started-at="2021-06-01T04:54:19Z" description="Search and verify the details of Audiobook" finished-at="2021-06-01T04:54:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search_AudioBook -->
-        <test-method status="PASS" signature="verify_Shelf()[pri:0, instance:WPT.SanityTests@30b8a058]" name="verify_Shelf" duration-ms="1541" started-at="2021-05-25T06:41:54Z" description="Verify the Shelf got loaded in the Featured Page" finished-at="2021-05-25T06:41:56Z">
+        <test-method status="PASS" signature="verify_Shelf()[pri:0, instance:WPT.SanityTests@30b8a058]" name="verify_Shelf" duration-ms="2409" started-at="2021-06-01T04:54:23Z" description="Verify the Shelf got loaded in the Featured Page" finished-at="2021-06-01T04:54:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Shelf -->
-        <test-method status="PASS" signature="verify_Suggest()[pri:0, instance:WPT.SanityTests@30b8a058]" name="verify_Suggest" duration-ms="33448" started-at="2021-05-25T06:41:56Z" description="Search and verify the details of Suggested eBooks and Audiobooks" finished-at="2021-05-25T06:42:29Z">
+        <test-method status="PASS" signature="verify_Suggest()[pri:0, instance:WPT.SanityTests@30b8a058]" name="verify_Suggest" duration-ms="45875" started-at="2021-06-01T04:54:25Z" description="Search and verify the details of Suggested eBooks and Audiobooks" finished-at="2021-06-01T04:55:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Suggest -->
-        <test-method status="PASS" signature="verify_ClearHistory()[pri:0, instance:WPT.SanityTests@30b8a058]" name="verify_ClearHistory" duration-ms="7361" started-at="2021-05-25T06:42:29Z" description="Verify borrowing the titles from the History section" finished-at="2021-05-25T06:42:37Z">
+        <test-method status="PASS" signature="verify_ClearHistory()[pri:0, instance:WPT.SanityTests@30b8a058]" name="verify_ClearHistory" duration-ms="12533" started-at="2021-06-01T04:55:11Z" description="Verify borrowing the titles from the History section" finished-at="2021-06-01T04:55:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_ClearHistory -->
-        <test-method status="PASS" signature="verify_flaggedTitle()[pri:0, instance:WPT.SanityTests@30b8a058]" name="verify_flaggedTitle" duration-ms="27134" started-at="2021-05-25T06:42:37Z" description="Verify borrowing the titles from the History section" finished-at="2021-05-25T06:43:04Z">
+        <test-method status="PASS" signature="verify_flaggedTitle()[pri:0, instance:WPT.SanityTests@30b8a058]" name="verify_flaggedTitle" duration-ms="33999" started-at="2021-06-01T04:55:24Z" description="Verify borrowing the titles from the History section" finished-at="2021-06-01T04:55:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_flaggedTitle -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:WPT.SanityTests@30b8a058]" name="tearDown" is-config="true" duration-ms="785" started-at="2021-05-25T06:43:04Z" finished-at="2021-05-25T06:43:05Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:WPT.SanityTests@30b8a058]" name="tearDown" is-config="true" duration-ms="852" started-at="2021-06-01T04:55:58Z" finished-at="2021-06-01T04:55:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- WPT.SanityTests -->
       <class name="Android.SanityDeviceTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Android.SanityDeviceTest@7494e528]" name="setUp" is-config="true" duration-ms="67514" started-at="2021-05-25T06:43:05Z" finished-at="2021-05-25T06:44:12Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Android.SanityDeviceTest@7494e528]" name="setUp" is-config="true" duration-ms="73157" started-at="2021-06-01T04:55:59Z" finished-at="2021-06-01T04:57:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyInvalidUser()[pri:0, instance:Android.SanityDeviceTest@7494e528]" name="verifyInvalidUser" duration-ms="9241" started-at="2021-05-25T06:44:12Z" description="Validate Authentication by entering Invalid Credentials" finished-at="2021-05-25T06:44:21Z">
+        <test-method status="PASS" signature="verifyInvalidUser()[pri:0, instance:Android.SanityDeviceTest@7494e528]" name="verifyInvalidUser" duration-ms="11646" started-at="2021-06-01T04:57:12Z" description="Validate Authentication by entering Invalid Credentials" finished-at="2021-06-01T04:57:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyInvalidUser -->
-        <test-method status="PASS" signature="verifyLogin()[pri:0, instance:Android.SanityDeviceTest@7494e528]" name="verifyLogin" duration-ms="17546" started-at="2021-05-25T06:44:21Z" description="TC_17012 Login [MSS]: Go through the overall login flow." finished-at="2021-05-25T06:44:39Z">
+        <test-method status="PASS" signature="verifyLogin()[pri:0, instance:Android.SanityDeviceTest@7494e528]" name="verifyLogin" duration-ms="23782" started-at="2021-06-01T04:57:23Z" description="TC_17012 Login [MSS]: Go through the overall login flow." finished-at="2021-06-01T04:57:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="verify_eBookFilter()[pri:0, instance:Android.SanityDeviceTest@7494e528]" name="verify_eBookFilter" duration-ms="52214" started-at="2021-05-25T06:44:39Z" description="Filter the eBooks" finished-at="2021-05-25T06:45:31Z">
+        <test-method status="PASS" signature="verify_eBookFilter()[pri:0, instance:Android.SanityDeviceTest@7494e528]" name="verify_eBookFilter" duration-ms="59106" started-at="2021-06-01T04:57:47Z" description="Filter the eBooks" finished-at="2021-06-01T04:58:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_eBookFilter -->
-        <test-method status="PASS" signature="verify_AudioBookFilter()[pri:0, instance:Android.SanityDeviceTest@7494e528]" name="verify_AudioBookFilter" duration-ms="57657" started-at="2021-05-25T06:45:31Z" description="Filter the AudioBooks" finished-at="2021-05-25T06:46:29Z">
+        <test-method status="PASS" signature="verify_AudioBookFilter()[pri:0, instance:Android.SanityDeviceTest@7494e528]" name="verify_AudioBookFilter" duration-ms="68206" started-at="2021-06-01T04:58:46Z" description="Filter the AudioBooks" finished-at="2021-06-01T04:59:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_AudioBookFilter -->
-        <test-method status="PASS" signature="verify_FavoritesFilter()[pri:0, instance:Android.SanityDeviceTest@7494e528]" name="verify_FavoritesFilter" duration-ms="36157" started-at="2021-05-25T06:46:29Z" description="Search a title in the All tab after applying Language filter" finished-at="2021-05-25T06:47:05Z">
+        <test-method status="PASS" signature="verify_FavoritesFilter()[pri:0, instance:Android.SanityDeviceTest@7494e528]" name="verify_FavoritesFilter" duration-ms="40998" started-at="2021-06-01T04:59:55Z" description="Search a title in the All tab after applying Language filter" finished-at="2021-06-01T05:00:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_FavoritesFilter -->
-        <test-method status="PASS" signature="verify_AllLanguageFilter()[pri:0, instance:Android.SanityDeviceTest@7494e528]" name="verify_AllLanguageFilter" duration-ms="32069" started-at="2021-05-25T06:47:05Z" description="Search a title in the All tab after applying Language filter" finished-at="2021-05-25T06:47:37Z">
+        <test-method status="PASS" signature="verify_AllLanguageFilter()[pri:0, instance:Android.SanityDeviceTest@7494e528]" name="verify_AllLanguageFilter" duration-ms="39579" started-at="2021-06-01T05:00:36Z" description="Search a title in the All tab after applying Language filter" finished-at="2021-06-01T05:01:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_AllLanguageFilter -->
-        <test-method status="PASS" signature="verify_BorrowEBook()[pri:0, instance:Android.SanityDeviceTest@7494e528]" name="verify_BorrowEBook" duration-ms="21067" started-at="2021-05-25T06:47:37Z" description="Borrow the EBook and Verify" finished-at="2021-05-25T06:47:58Z">
+        <test-method status="PASS" signature="verify_BorrowEBook()[pri:0, instance:Android.SanityDeviceTest@7494e528]" name="verify_BorrowEBook" duration-ms="26936" started-at="2021-06-01T05:01:15Z" description="Borrow the EBook and Verify" finished-at="2021-06-01T05:01:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_BorrowEBook -->
-        <test-method status="PASS" signature="verify_BorrowAudioBook()[pri:0, instance:Android.SanityDeviceTest@7494e528]" name="verify_BorrowAudioBook" duration-ms="28305" started-at="2021-05-25T06:47:58Z" description="Borrow the AudioBook and Verify" finished-at="2021-05-25T06:48:26Z">
+        <test-method status="PASS" signature="verify_BorrowAudioBook()[pri:0, instance:Android.SanityDeviceTest@7494e528]" name="verify_BorrowAudioBook" duration-ms="34144" started-at="2021-06-01T05:01:42Z" description="Borrow the AudioBook and Verify" finished-at="2021-06-01T05:02:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_BorrowAudioBook -->
-        <test-method status="PASS" signature="verify_BorrowPDF()[pri:0, instance:Android.SanityDeviceTest@7494e528]" name="verify_BorrowPDF" duration-ms="19307" started-at="2021-05-25T06:48:26Z" description="Borrow the PDF and Verify" finished-at="2021-05-25T06:48:46Z">
+        <test-method status="PASS" signature="verify_BorrowPDF()[pri:0, instance:Android.SanityDeviceTest@7494e528]" name="verify_BorrowPDF" duration-ms="26298" started-at="2021-06-01T05:02:16Z" description="Borrow the PDF and Verify" finished-at="2021-06-01T05:02:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_BorrowPDF -->
-        <test-method status="PASS" signature="verifyShelfName()[pri:0, instance:Android.SanityDeviceTest@7494e528]" name="verifyShelfName" duration-ms="14996" started-at="2021-05-25T06:48:46Z" description="Verify the Shelf Name" finished-at="2021-05-25T06:49:01Z">
+        <test-method status="PASS" signature="verifyShelfName()[pri:0, instance:Android.SanityDeviceTest@7494e528]" name="verifyShelfName" duration-ms="14426" started-at="2021-06-01T05:02:42Z" description="Verify the Shelf Name" finished-at="2021-06-01T05:02:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyShelfName -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Android.SanityDeviceTest@7494e528]" name="tearDown" is-config="true" duration-ms="6021" started-at="2021-05-25T06:49:01Z" finished-at="2021-05-25T06:49:07Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Android.SanityDeviceTest@7494e528]" name="tearDown" is-config="true" duration-ms="7299" started-at="2021-06-01T05:02:57Z" finished-at="2021-06-01T05:03:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

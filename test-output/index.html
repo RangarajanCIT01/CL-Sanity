@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-CloudLibrary_Sanity_Suite">
-              <span class="suite-name border-passed">CloudLibrary Sanity Suite</span>
+              <span class="suite-name border-skipped">CloudLibrary Sanity Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">23 methods,   23 passed</span>
+                    <span class="method-stats">24 methods,  1 skipped,  23 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-CloudLibrary_Sanity_Suite" class="hide-methods skipped suite-CloudLibrary_Sanity_Suite"> (hide)</a> <!-- hide-methods skipped suite-CloudLibrary_Sanity_Suite -->
+                      <a href="#" panel-name="suite-CloudLibrary_Sanity_Suite" class="show-methods skipped suite-CloudLibrary_Sanity_Suite"> (show)</a> <!-- show-methods skipped suite-CloudLibrary_Sanity_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-CloudLibrary_Sanity_Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CloudLibrary_Sanity_Suite" title="WPT.SanityTests" hash-for-method="borrow_EBook">borrow_EBook</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-CloudLibrary_Sanity_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -227,6 +241,55 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-CloudLibrary_Sanity_Suite" class="panel CloudLibrary_Sanity_Suite">
+          <div class="suite-CloudLibrary_Sanity_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">WPT.SanityTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="borrow_EBook">
+                  </a> <!-- borrow_EBook -->
+                  <span class="method-name">borrow_EBook</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[@id=&apos;close&apos;] (tried for 8 second(s) with 2000 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at WebPages.WPTBasePage.getElement(WPTBasePage.java:48)
+	at WPT.SanityTests.borrow_EBook(SanityTests.java:195)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@id=&apos;close&apos;]&quot;}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;QA-RANGARAJAN&apos;, ip: &apos;192.168.60.190&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\RANGAR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:33169}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0cc05f901ed1bf37050d97139a13827c
+*** Element info: {Using=xpath, value=//span[@id=&apos;close&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 27 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Borrow an EBook and verify the functionalities)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CloudLibrary_Sanity_Suite-class-skipped -->
           <div class="suite-CloudLibrary_Sanity_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -636,104 +699,108 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(23);
+data.addRows(24);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'borrow_EBook')
 data.setCell(0, 2, 'WPT.SanityTests')
-data.setCell(0, 3, 94359);
+data.setCell(0, 3, 101421);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verify_EBookBookmark')
+data.setCell(1, 1, 'borrow_EBook')
 data.setCell(1, 2, 'WPT.SanityTests')
-data.setCell(1, 3, 78259);
+data.setCell(1, 3, 86132);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'borrow_AudioBook')
+data.setCell(2, 1, 'verify_EBookBookmark')
 data.setCell(2, 2, 'WPT.SanityTests')
-data.setCell(2, 3, 60565);
+data.setCell(2, 3, 81983);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verify_AudioBookFilter')
 data.setCell(3, 2, 'Android.SanityDeviceTest')
-data.setCell(3, 3, 57657);
+data.setCell(3, 3, 68206);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'verify_eBookFilter')
 data.setCell(4, 2, 'Android.SanityDeviceTest')
-data.setCell(4, 3, 52214);
+data.setCell(4, 3, 59106);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verify_FavoritesFilter')
-data.setCell(5, 2, 'Android.SanityDeviceTest')
-data.setCell(5, 3, 36157);
+data.setCell(5, 1, 'borrow_AudioBook')
+data.setCell(5, 2, 'WPT.SanityTests')
+data.setCell(5, 3, 57251);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'verify_Suggest')
 data.setCell(6, 2, 'WPT.SanityTests')
-data.setCell(6, 3, 33448);
+data.setCell(6, 3, 45875);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verify_AllLanguageFilter')
+data.setCell(7, 1, 'verify_FavoritesFilter')
 data.setCell(7, 2, 'Android.SanityDeviceTest')
-data.setCell(7, 3, 32069);
+data.setCell(7, 3, 40998);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verify_BorrowAudioBook')
+data.setCell(8, 1, 'verify_AllLanguageFilter')
 data.setCell(8, 2, 'Android.SanityDeviceTest')
-data.setCell(8, 3, 28305);
+data.setCell(8, 3, 39579);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verify_flaggedTitle')
-data.setCell(9, 2, 'WPT.SanityTests')
-data.setCell(9, 3, 27134);
+data.setCell(9, 1, 'verify_BorrowAudioBook')
+data.setCell(9, 2, 'Android.SanityDeviceTest')
+data.setCell(9, 3, 34144);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'verify_BorrowEBook')
-data.setCell(10, 2, 'Android.SanityDeviceTest')
-data.setCell(10, 3, 21067);
+data.setCell(10, 1, 'verify_flaggedTitle')
+data.setCell(10, 2, 'WPT.SanityTests')
+data.setCell(10, 3, 33999);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'verify_BorrowPDF')
+data.setCell(11, 1, 'verify_BorrowEBook')
 data.setCell(11, 2, 'Android.SanityDeviceTest')
-data.setCell(11, 3, 19307);
+data.setCell(11, 3, 26936);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'verify_Filter')
-data.setCell(12, 2, 'WPT.SanityTests')
-data.setCell(12, 3, 17851);
+data.setCell(12, 1, 'verify_BorrowPDF')
+data.setCell(12, 2, 'Android.SanityDeviceTest')
+data.setCell(12, 3, 26298);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'verifyLogin')
 data.setCell(13, 2, 'Android.SanityDeviceTest')
-data.setCell(13, 3, 17546);
+data.setCell(13, 3, 23782);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'verifyShelfName')
-data.setCell(14, 2, 'Android.SanityDeviceTest')
-data.setCell(14, 3, 14996);
+data.setCell(14, 1, 'verify_Filter')
+data.setCell(14, 2, 'WPT.SanityTests')
+data.setCell(14, 3, 14870);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'verify_EBookBookmarkDelete')
 data.setCell(15, 2, 'WPT.SanityTests')
-data.setCell(15, 3, 14745);
+data.setCell(15, 3, 14716);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'verifyInvalidUser')
+data.setCell(16, 1, 'verifyShelfName')
 data.setCell(16, 2, 'Android.SanityDeviceTest')
-data.setCell(16, 3, 9241);
+data.setCell(16, 3, 14426);
 data.setCell(17, 0, 17)
 data.setCell(17, 1, 'verify_ClearHistory')
 data.setCell(17, 2, 'WPT.SanityTests')
-data.setCell(17, 3, 7361);
+data.setCell(17, 3, 12533);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'verify_EBookGotoPage')
-data.setCell(18, 2, 'WPT.SanityTests')
-data.setCell(18, 3, 6424);
+data.setCell(18, 1, 'verifyInvalidUser')
+data.setCell(18, 2, 'Android.SanityDeviceTest')
+data.setCell(18, 3, 11646);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'search_AudioBook')
+data.setCell(19, 1, 'verify_EBookGotoPage')
 data.setCell(19, 2, 'WPT.SanityTests')
-data.setCell(19, 3, 4154);
+data.setCell(19, 3, 6381);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'search_EBook')
+data.setCell(20, 1, 'search_AudioBook')
 data.setCell(20, 2, 'WPT.SanityTests')
-data.setCell(20, 3, 4059);
+data.setCell(20, 3, 4024);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'verify_ValidUser')
+data.setCell(21, 1, 'search_EBook')
 data.setCell(21, 2, 'WPT.SanityTests')
-data.setCell(21, 3, 3179);
+data.setCell(21, 3, 3797);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'verify_Shelf')
+data.setCell(22, 1, 'verify_ValidUser')
 data.setCell(22, 2, 'WPT.SanityTests')
-data.setCell(22, 3, 1541);
+data.setCell(22, 3, 3167);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'verify_Shelf')
+data.setCell(23, 2, 'WPT.SanityTests')
+data.setCell(23, 3, 2409);
 window.suiteTableData['CloudLibrary_Sanity_Suite']= { tableData: data, tableDiv: 'times-div-CloudLibrary_Sanity_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 minutes</span>
+              <span class="suite-total-time">Total running time: 13 minutes</span>
               <div id="times-div-CloudLibrary_Sanity_Suite">
               </div> <!-- times-div-CloudLibrary_Sanity_Suite -->
             </div> <!-- times-div -->
@@ -788,110 +855,114 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verify_ValidUser</span>
-                <span class="method-start">8685 ms</span>
+                <span class="method-start">8464 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_Filter</span>
-                <span class="method-start">11866 ms</span>
+                <span class="method-start">11633 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_EBookBookmark</span>
-                <span class="method-start">29718 ms</span>
+                <span class="method-start">26505 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_EBookBookmarkDelete</span>
-                <span class="method-start">107978 ms</span>
+                <span class="method-start">108489 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_EBookGotoPage</span>
-                <span class="method-start">122723 ms</span>
+                <span class="method-start">123206 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">borrow_EBook</span>
-                <span class="method-start">129148 ms</span>
+                <span class="method-start">129587 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">borrow_EBook</span>
+                <span class="method-start">215729 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">borrow_AudioBook</span>
-                <span class="method-start">223507 ms</span>
+                <span class="method-start">317151 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">search_EBook</span>
-                <span class="method-start">284073 ms</span>
+                <span class="method-start">374403 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">search_AudioBook</span>
-                <span class="method-start">288132 ms</span>
+                <span class="method-start">378200 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_Shelf</span>
-                <span class="method-start">292287 ms</span>
+                <span class="method-start">382225 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_Suggest</span>
-                <span class="method-start">293829 ms</span>
+                <span class="method-start">384634 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_ClearHistory</span>
-                <span class="method-start">327278 ms</span>
+                <span class="method-start">430510 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_flaggedTitle</span>
-                <span class="method-start">334639 ms</span>
+                <span class="method-start">443044 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">361774 ms</span>
+                <span class="method-start">477044 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Android.SanityDeviceTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">362560 ms</span>
+                <span class="method-start">477901 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifyInvalidUser</span>
-                <span class="method-start">430074 ms</span>
+                <span class="method-start">551058 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyLogin</span>
-                <span class="method-start">439315 ms</span>
+                <span class="method-start">562705 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_eBookFilter</span>
-                <span class="method-start">456862 ms</span>
+                <span class="method-start">586495 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_AudioBookFilter</span>
-                <span class="method-start">509077 ms</span>
+                <span class="method-start">645602 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_FavoritesFilter</span>
-                <span class="method-start">566734 ms</span>
+                <span class="method-start">713809 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_AllLanguageFilter</span>
-                <span class="method-start">602892 ms</span>
+                <span class="method-start">754808 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_BorrowEBook</span>
-                <span class="method-start">634962 ms</span>
+                <span class="method-start">794388 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_BorrowAudioBook</span>
-                <span class="method-start">656029 ms</span>
+                <span class="method-start">821325 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_BorrowPDF</span>
-                <span class="method-start">684335 ms</span>
+                <span class="method-start">855470 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyShelfName</span>
-                <span class="method-start">703643 ms</span>
+                <span class="method-start">881768 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">718639 ms</span>
+                <span class="method-start">896194 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
