@@ -12,7 +12,7 @@
      <class name="WPT.SanityTests">
        <methods>
         <include name="verify_ValidUser"/>
-        <include name="verify_Filter" />
+        <include name="verify_Filter"/>
          
       </methods>
      </class>
