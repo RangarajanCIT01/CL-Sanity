@@ -9,11 +9,11 @@
   <test name="WPT Sanity Check" >
       
    <classes>
-     <class name="WPT.SanityTests">
-       <methods>
-        <include name="verify_ValidUser"/>
-        <include name="verify_Filter"/>
-         
+      <class name="Android.SanityDeviceTest">
+        <methods>
+        <include name="verifyInvalidUser" />
+        <include name="verifyLogin" />
+               
       </methods>
      </class>
      
